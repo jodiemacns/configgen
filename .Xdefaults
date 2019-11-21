@@ -1,0 +1,24 @@
+!! File : .Xresources
+XTerm*title: xterm
+XTerm*background: #011622
+XTerm*foreground: WhiteSmoke
+XTerm*pointerColor: white
+XTerm*pointerColorBackground: #011622
+XTerm*cursorColor: #EBD27D
+XTerm*internalBorder: 3
+XTerm*loginShell: true
+XTerm*scrollBar: false
+XTerm*scrollKey: true
+XTerm*saveLines: 1250
+XTerm*multiClickTime: 250
+XTerm*Geometry: 140x50+110+60
+XTerm*renderFont: true
+XTerm*faceName: DejaVuSansMono
+XTerm*faceSize: 10 
+XTerm*toolBar: false
+XTerm*fullscreen: false
+XTerm*color4: royalblue
+XTerm*color12: lightblue
+
+!------------
+

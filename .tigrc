@@ -1,0 +1,6 @@
+#bind main P !git push origin
+bind main <F1> !git pull
+bind main <F2> !git push origin
+bind main <F3> !git checkout %(commit)
+bind main <F4> !git checkout -- .
+bind main ! !git checkout master 
