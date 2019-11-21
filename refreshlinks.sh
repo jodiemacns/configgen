@@ -26,6 +26,8 @@ ln -s -f ~/configgen/.Xdefaults ~/.Xdefaults
 ln -s -f ~/configgen/.tigrc ~/.tigrc
 ln -s -f ~/configgen/.ti99sim ~/.ti99sim
 ln -s -f ~/configgen/.xinitrc ~/.xinitrc
-ln -s -f ~/configgen/awesome ~/.config/awesome
+
+cp -fr ~/configgen/awesome ~/.config/awesome
+convertawesome.sh
 
 
