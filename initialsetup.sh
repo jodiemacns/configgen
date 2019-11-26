@@ -29,7 +29,7 @@
 #        mkdir ~/Mail
 #fi
 ./install_apps.sh $(cat apps.list)
-echo "source ~/config/bashrc" >> ~/.bashrc
+echo "source ~/configgen/bashrc" >> ~/.bashrc
 ./refreshlinks.sh
 
 #echo "export EDITOR=vim" >> ~/.bashrc

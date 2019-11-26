@@ -9,6 +9,7 @@ mkdir -p ~/.config
 mkdir -p ~/.config/ranger
 mkdir -p ~/.calcurse
 mkdir -p ~/.weechat
+mkdir -p ~/.w3m
 
 ln -s -f ~/configgen/mutt-wiz/.mutt ~/.mutt
 ln -s -f ~/configgen/mutt-wiz/msmtp ~/.config/msmtp

@@ -1,6 +1,6 @@
 export EDITOR=vim
-export PATH=$PATH:~/config/
-export PATH=$PATH:~/config/bin/
+export PATH=$PATH:~/configgen/
+export PATH=$PATH:~/configgen/bin/
 export GOPATH=~/go
 export RTV_BROWSER=w3m
 export BROWSER=w3m
@@ -15,7 +15,7 @@ alias s_q='sr -browser=w3m stockquote'
 alias w_sq='sr -browser=firefox stockquote'
 alias w_sg='sr -browser=firefox google'
 alias tmuxk='tmux kill-session'
-alias bm='w3m ~/config/bookmark.html'
+alias bm='w3m ~/configgen/bookmark.html'
 alias sshterm='xterm -fn 9x15 -e ssh jodie@192.168.0.2 &'
 
 if [ "$TERM" = "linux" ]; then
@@ -38,4 +38,4 @@ if [ "$TERM" = "linux" ]; then
     clear #for background artifacting
 fi
 
-~/config/randomjoke_seinfeld.sh
+~/configgen/randomjoke_seinfeld.sh
