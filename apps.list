@@ -12,7 +12,8 @@ pass
 mplayer
 ranger
 jq
-volumeicon
+volumeicon-alsa
 blueman
 weechat
 tor
+python3-pip

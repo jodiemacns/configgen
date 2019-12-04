@@ -10,20 +10,22 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 """colorscheme  evening
-set expandtab tabstop=3
+set expandtab tabstop=4
 set shiftwidth=3
 set number
 set tags=./tags;,tags;
 set nohlsearch
 set spelllang=en_us
 set nospell
+set nowrap
 
 """ ---------------------------------------------------------------------------
 """ Vundle package manger option
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scuilion/markdown-drawer'
 call vundle#end()
-
+let g:markdrawer_drawer_max_levels = 2
 """ ---------------------------------------------------------------------------
 """ OmniCppComplete for finishing structures from tag file
 Plugin 'OmniCppComplete'
