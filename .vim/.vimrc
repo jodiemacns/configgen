@@ -32,7 +32,7 @@ Plugin 'OmniCppComplete'
 """ Plugin 'Conque-GDB'
 
 " " build tags of your own project with Ctrl-F12
-map <F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F6> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <F2> :!tig <CR>
 map <F3> :!git diff --name-only <CR>
 map <F4> :!git difftool --tool=vimdiff --no-prompt %<CR>
