@@ -1,0 +1,33 @@
+/******************************************************************************
+	* Copyright (C) by Enginuity Inc. - All Rights Reserved
+	* Unauthorized copying of this file, via any medium is strictly prohibited
+	* Proprietary and confidential
+	* Written by __USER, __DATE 
+******************************************************************************/
+#ifndef COMMS_INCLUDED 
+#define COMMS_INCLUDED 
+
+//******************************************************************************
+// Include files.
+
+//******************************************************************************
+// Macros and typedefs.
+typedef enum
+{
+    QMSG_COMMS_BUSY,
+    QMSG_COMMS_
+} _queue_msg_comms_e;
+
+
+//------------------------------------------------------------------------------
+// Module variables
+#ifdef MAIN_C
+#else
+#endif
+
+//******************************************************************************
+// Functions.
+void comms_task(void *vParam);
+
+#endif
+

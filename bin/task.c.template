@@ -1,0 +1,77 @@
+/******************************************************************************
+    * Copyright (C) by Enginuity Inc. - All Rights Reserved
+    * Unauthorized copying of this file, via any medium is strictly prohibited
+    * Proprietary and confidential
+    * Written by __USER
+******************************************************************************/
+
+/**
+  ******************************************************************************
+  * @file    comms.c
+  * @project iot_valve
+  * @author  
+  * @version V0.1
+  * @date    __DATE 
+  * @brief   
+  ******************************************************************************
+  * @attention
+  *
+  * (C) Copyright 2019 Enginuity Inc.
+  ******************************************************************************
+  *
+*/
+#define COMMS_C
+
+//******************************************************************************
+// Includes
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "debug.h"
+#include "valve_tasks.h"
+
+// ***************************************************************************
+/**
+ * @brief - Handles the comms.
+ * @param - vParam.
+**/
+// ***************************************************************************
+void comms_task(void *vParam)
+{
+    _resp_msg_t   msg;
+    char          *myName = (char *)vParam;
+    QueueHandle_t myQ = get_q_by_name(myName);
+    int8_t        myId = get_id_by_name(myName);
+
+    dbg_printf("Starting !!! %s\n", myName); 
+
+    while(1)
+    {
+        if(xQueueReceive(myQ,&msg,5000))
+        {
+            dbg_printf("-%s message:\nid:      %x\nparam 0: %x\nparam 1: %x\nparam_16:%x\n",
+               myName,
+               msg.id,
+               msg.param[0],
+               msg.param[1],
+               msg.param_16);
+               // Handle the Received Message.
+               switch(msg.id)
+               {
+                   case 1:
+                       // Respond back to the requesting task
+                       msg.param_16 = 0;
+                       msg.to = msg.from; 
+                       msg.from = myId;
+                       xQueueSend(gvQueueTask[msg.to], &msg,10);
+                       break;
+                   default:
+                       break;
+               }
+                   
+        }else{
+           dbg_printf("%s got nothing\n", myName);
+        }
+    }
+}
+
