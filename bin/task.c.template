@@ -8,8 +8,8 @@
 /**
   ******************************************************************************
   * @file    comms.c
-  * @project iot_valve
-  * @author  
+  * @project 
+  * @author  __USER
   * @version V0.1
   * @date    __DATE 
   * @brief   
@@ -29,6 +29,29 @@
 #include "queue.h"
 #include "debug.h"
 #include "valve_tasks.h"
+
+//******************************************************************************
+// typedef and enums 
+
+
+//******************************************************************************
+// Variables used by the comms 
+typedef struct
+{
+    QueueHandle_t myQ;
+    int8_t        myId;
+    bool          busy;
+
+} _comms_t;
+
+//******************************************************************************
+// Module variables.
+static _comms_t comms =
+{
+    .busy = 0
+    .myQ  = -1;
+    .myId = -1;
+};
 
 // ***************************************************************************
 /**
