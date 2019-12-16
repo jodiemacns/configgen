@@ -12,17 +12,39 @@
 
 //******************************************************************************
 // Macros and typedefs.
+
+//******************************************************************************
+// COMMS Queue messages
 typedef enum
 {
     QMSG_COMMS_BUSY,
     QMSG_COMMS_
 } _queue_msg_comms_e;
 
+//------------------------------------------------------------------------------
+// COMMS state machine 
+typedef enum
+{
+    COMMS_STATE_INIT = 1,
+    COMMS_STATE_DEINIT,
+    COMMS_STATE_ERROR,
+    COMMS_STATE_OFF
+} _state_comms_e;
 
 //------------------------------------------------------------------------------
 // Module variables
 #ifdef MAIN_C
+_id_string_t gv_commsStateNames[] =
+{
+    {.id = 0,                          .pName = "COMMS_STATE_UNDEFINED" },
+    {.id = COMMS_STATE_INIT,           .pName = "COMMS_STATE_INIT"      }, 
+    {.id = COMMS_STATE_DEINIT,         .pName = "COMMS_STATE_DEINIT"    },                    
+    {.id = COMMS_STATE_ERROR,          .pName = "COMMS_STATE_ERROR"     },                   
+    {.id = COMMS_STATE_OFF,            .pName = "COMMS_STATE_OFF"       },                 
+    {.pName = NULL        }
+};
 #else
+_id_string_t gv_commsStateNames[];
 #endif
 
 //******************************************************************************
