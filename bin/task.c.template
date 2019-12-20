@@ -48,9 +48,9 @@ typedef struct
 // Module variables.
 static _comms_t comms =
 {
-    .busy = 0
-    .myQ  = -1;
-    .myId = -1;
+    .busy = 0,
+    .myQ  = NULL,
+    .myId = -1,
 };
 
 // ***************************************************************************
@@ -63,14 +63,15 @@ void comms_task(void *vParam)
 {
     _resp_msg_t   msg;
     char          *myName = (char *)vParam;
-    QueueHandle_t myQ = get_q_by_name(myName);
-    int8_t        myId = get_id_by_name(myName);
+
+    comms.myQ = get_q_by_name(myName);
+    comms.myId = get_id_by_name(myName);
 
     dbg_printf("Starting !!! %s\n", myName); 
 
     while(1)
     {
-        if(xQueueReceive(myQ,&msg,5000))
+        if(xQueueReceive(comms.myQ,&msg,5000))
         {
             dbg_printf("-%s message:\nid:      %x\nparam 0: %x\nparam 1: %x\nparam_16:%x\n",
                myName,
@@ -85,7 +86,7 @@ void comms_task(void *vParam)
                        // Respond back to the requesting task
                        msg.param_16 = 0;
                        msg.to = msg.from; 
-                       msg.from = myId;
+                       msg.from = comms.myId;
                        xQueueSend(gvQueueTask[msg.to], &msg,10);
                        break;
                    default:

@@ -21,7 +21,7 @@ typedef enum
 
 //------------------------------------------------------------------------------
 // Module variables
-#ifdef MAIN_C
+#ifdef COMMS_C
 #else
 #endif
 
