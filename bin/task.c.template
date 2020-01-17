@@ -35,12 +35,12 @@
 
 
 //******************************************************************************
-// Variables used by the comms 
+//! Variables used by the comms 
 typedef struct
 {
-    QueueHandle_t myQ;
-    int8_t        myId;
-    bool          busy;
+    QueueHandle_t myQ;    //! Queue Handler
+    int8_t        myId;   //! id of my task
+    bool          busy;   //! Busy flag.
 
 } _comms_t;
 

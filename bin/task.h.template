@@ -4,6 +4,23 @@
 	* Proprietary and confidential
 	* Written by __USER, __DATE 
 ******************************************************************************/
+/**                                                                                                                                                          |
+ *******************************************************************************                                                                             |
+ * @file    comms.h                                                                                                                                     |
+ * @project iot_valve                                                                                                                                        |
+ * @author  __USER 
+ * @version V0.1                                                                                                                                             |
+ * @date    __DATE 
+ * @brief   COMMS.                                                                                                          |
+ *                                                                                                                                                           |
+ ******************************************************************************                                                                              |
+ * @attention                                                                                                                                                |
+ *                                                                                                                                                           |
+ * (C) Copyright 2019 Enginuity Inc.                                                                                                                         |
+ ******************************************************************************                                                                              |
+ *                                                                                                                                                           |
+ */                                                                                                                                                          |
+
 #ifndef COMMS_INCLUDED 
 #define COMMS_INCLUDED 
 
@@ -12,10 +29,12 @@
 
 //******************************************************************************
 // Macros and typedefs.
+
+//! queue messages. 
 typedef enum
 {
-    QMSG_COMMS_BUSY,
-    QMSG_COMMS_
+    QMSG_COMMS_BUSY,        //! Busy
+    QMSG_COMMS              //! Other messages
 } _queue_msg_comms_e;
 
 
