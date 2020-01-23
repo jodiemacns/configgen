@@ -8,11 +8,11 @@
 /**
   ******************************************************************************
   * @file    comms.c
-  * @project 
+  * project
   * @author  __USER
   * @version V0.1
-  * @date    __DATE 
-  * @brief   
+  * @date    __DATE
+  * @brief
   ******************************************************************************
   * @attention
   *
@@ -24,18 +24,16 @@
 
 //******************************************************************************
 // Includes
+#include <stdint.h>
+#include <stdbool.h>
 #include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
-#include "debug.h"
-#include "valve_tasks.h"
+#include "comms.h"
 
 //******************************************************************************
-// typedef and enums 
-
+// typedef and enums
 
 //******************************************************************************
-// Variables used by the comms 
+// Variables used by the comms
 typedef struct
 {
     char          *myName;
@@ -56,8 +54,8 @@ static _comms_t comms =
 
 // ***************************************************************************
 /**
- * @brief - Handles the comms.
- * @param - vParam.
+ * @brief Handles the comms.
+ * @param vParam Passed in paramater.
 **/
 // ***************************************************************************
 void comms_task(void *vParam)
@@ -68,7 +66,7 @@ void comms_task(void *vParam)
     comms.myQ    = get_q_by_name(comms.myName);
     comms.myId   = get_id_by_name(comms.myName);
 
-    dbg_printf("Starting !!! %s\n", comms.myName); 
+    dbg_printf("Starting !!! %s\n", comms.myName);
 
     while(1)
     {
@@ -86,14 +84,14 @@ void comms_task(void *vParam)
                    case 1:
                        // Respond back to the requesting task
                        msg.param_16 = 0;
-                       msg.to = msg.from; 
+                       msg.to = msg.from;
                        msg.from = comms.myId;
                        xQueueSend(gvQueueTask[msg.to], &msg,10);
                        break;
                    default:
                        break;
                }
-                   
+
         }else{
            dbg_printf("%s got nothing\n", comms.myName);
         }
