@@ -11,8 +11,8 @@ do
    echo "****************************************"
    echo Pip installing $var
    echo ----------------------------------------
-   echo pip3 install --user $var  
-   echo pip3 install --user $var --upgrade
+   pip3 install --user $var  
+   pip3 install --user $var --upgrade
    echo "****************************************"
 done
 
