@@ -11,9 +11,9 @@ mkdir -p ~/.calcurse
 mkdir -p ~/.weechat
 mkdir -p ~/.w3m
 
-ln -s -f ~/configgen/mutt-wiz/.mutt ~/.mutt
-ln -s -f ~/configgen/mutt-wiz/msmtp ~/.config/msmtp
-ln -s -f ~/configgen/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+#ln -s -f ~/configgen/mutt-wiz/.mutt ~/.mutt
+#ln -s -f ~/configgen/mutt-wiz/msmtp ~/.config/msmtp
+#ln -s -f ~/configgen/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 
 ln -s -f ~/configgen/.vim ~/.vim
 ln -s -f ~/configgen/.vim/.vimrc ~/.vimrc
