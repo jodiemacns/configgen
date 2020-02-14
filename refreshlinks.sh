@@ -11,9 +11,9 @@ mkdir -p ~/.calcurse
 mkdir -p ~/.weechat
 mkdir -p ~/.w3m
 
-ln -s -f ~/configgen/mutt-wiz/.mutt ~/.mutt
-ln -s -f ~/configgen/mutt-wiz/msmtp ~/.config/msmtp
-ln -s -f ~/configgen/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+#ln -s -f ~/configgen/mutt-wiz/.mutt ~/.mutt
+#ln -s -f ~/configgen/mutt-wiz/msmtp ~/.config/msmtp
+#ln -s -f ~/configgen/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 
 ln -s -f ~/configgen/.vim ~/.vim
 ln -s -f ~/configgen/.vim/.vimrc ~/.vimrc
@@ -26,6 +26,8 @@ ln -s -f ~/configgen/.Xdefaults ~/.Xdefaults
 ln -s -f ~/configgen/.tigrc ~/.tigrc
 ln -s -f ~/configgen/.ti99sim ~/.ti99sim
 ln -s -f ~/configgen/.xinitrc ~/.xinitrc
-ln -s -f ~/configgen/awesome ~/.config/awesome
+
+cp -fr ~/configgen/awesome ~/.config/awesome
+convertawesome.sh
 
 
