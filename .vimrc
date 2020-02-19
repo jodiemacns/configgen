@@ -30,6 +30,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scuilion/markdown-drawer'
 Plugin 'tomtom/checksyntax_vim'
 Plugin 'Xuyuanp/nerdtree-gid-plugin'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 let g:markdrawer_drawer_max_levels = 2
 """ ---------------------------------------------------------------------------
@@ -48,7 +49,7 @@ map <F5> :%s/\s\+$//e <CR>:%s/\t/    /g<CR> :%s///g<CR>:set nohlsearch<CR>
 map <F6> :!find . -name \*.[ch] -exec ctags --sort=yes --c++-kinds=+p --fields=+iaS {} +<CR>:cscope reset<CR>
 
 """ Insert doxygen comments
-map <f7> <ESC>0$80a <ESC>0l80ldwi///< comment <ESC>j0 
+map <f7> <ESC>0$80a <ESC>0l80ldwi///< comment <ESC>j0
 map <f8> <ESC>:cscope find a 
 """map <F7> :vertical resize -10 <CR>
 """map <F8> :vertical resize +10 <CR>
@@ -73,8 +74,8 @@ set completeopt=menuone,menu,longest,preview
 map <F11> :let g:ConqueGdb_GdbExe = '/opt/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb'
 let g:ConqueGdb_GdbExe = '/opt/local/bin/ggdb'
 let g:ConqueGdb_GdbExe = '/opt/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb'
+let g:ConqueGdb_Leader = 't'
 let g:ConqueGdb_Disable = 1
-let g:ConqueGdb_Leader = ' '
 
 """ ---------------------------------------------------------------------------
 """ Switching from c file to header file 
