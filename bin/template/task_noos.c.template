@@ -1,0 +1,116 @@
+/******************************************************************************
+    * Copyright (C) by Enginuity Inc. - All Rights Reserved
+    * Unauthorized copying of this file, via any medium is strictly prohibited
+    * Proprietary and confidential
+    * Written by __USER
+******************************************************************************/
+
+/**
+  ******************************************************************************
+  * @file    comms.c
+  * project
+  * @author  __USER
+  * @version V0.1
+  * @date    __DATE
+  * @brief
+  ******************************************************************************
+  * @attention
+  *
+  * (C) Copyright 2019 Enginuity Inc.
+  ******************************************************************************
+  *
+*/
+#define COMMS_C
+
+//******************************************************************************
+// Includes
+#include <stdint.h>
+#include <stdbool.h>
+#include "FreeRTOS.h"
+#include "comms.h"
+
+//******************************************************************************
+// typedef and enums
+
+//******************************************************************************
+//! Variables used by the comms
+typedef struct
+{
+    apptick_t startTime;    ///< Used to time stuff.
+    _state_comms_e state;  ///< State of the comms task.
+} _comms_t;
+
+//******************************************************************************
+// Module variables.
+static _comms_t comms;
+
+// ***************************************************************************
+/**
+ * @brief Handles the comms.
+ * @param tick  - This is the ongoing msec tick of the system for timing.
+**/
+// ***************************************************************************
+void comms_task(apptick_t tick)
+{
+    if(comms.state == COMMS_STATE_INIT)
+    {
+        comms.startTime = tick;
+        dbg_printf("Comms Started...\n");
+    }
+
+    switch(comms.state)
+    {
+        case COMMS_STATE_INIT:
+            if(util_is_timeout(tick, comms.startTime, 1000) == UTIL_TRUE)
+            {
+                set_comms_state(COMMS_STATE_DEINIT);
+            }
+            break;
+        case COMMS_STATE_DEINIT:
+            if(util_is_timeout(tick, comms.startTime, 1000) == UTIL_TRUE)
+            {
+                set_comms_state(COMMS_STATE_DEINIT);
+            }
+            break;
+        case COMMS_STATE_ERROR:
+            if(util_is_timeout(tick, comms.startTime, 1000) == UTIL_TRUE)
+            {
+                set_comms_state(COMMS_STATE_DEINIT);
+            }
+            break;
+        case COMMS_STATE_OFF:
+            if(util_is_timeout(tick, comms.startTime, 1000) == UTIL_TRUE)
+            {
+                set_comms_state(COMMS_STATE_DEINIT);
+            }
+            break;
+        default:
+            set_comms_state(COMMS_STATE_INIT);
+            break;
+    }
+}
+
+// ***************************************************************************
+/**
+ * @brief Sets the state of the comms task.
+ * @param state State in which we want to set it to.
+**/
+// ***************************************************************************
+_state_comms_e set_comms_state(_state_comms_e state)
+{
+    switch(comms.state)
+    {
+        case COMMS_STATE_INIT:
+            break;
+        case COMMS_STATE_DEINIT:
+            break;
+        case COMMS_STATE_ERROR:
+            break;
+        case COMMS_STATE_OFF:
+            break;
+        default:
+            break;
+    }
+    comms.state = state;
+    return state;
+}
