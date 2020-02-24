@@ -94,7 +94,7 @@ typedef enum
 
 //******************************************************************************
 // Module variables
-#ifdef COMM_C
+#ifdef COMMS_C
 //******************************************************************************
 //! COMMS debugging
 _id_string_t gv_commsStateNames[] =

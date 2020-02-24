@@ -35,7 +35,13 @@ call vundle#end()
 let g:markdrawer_drawer_max_levels = 2
 """ ---------------------------------------------------------------------------
 """ OmniCppComplete for finishing structures from tag file
-Plugin 'OmniCppComplete'
+"""Plugin 'OmniCppComplete'
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
 
 """ Function keys.
 map <F1> :grep -i -r --include "*.[ch]" --include "*.cpp" reason .
@@ -44,9 +50,10 @@ map <F3> :!git diff --name-only<CR>
 map <F4> :!git difftool --tool=vimdiff --no-prompt %<CR>
 """ map <F5> : let g:ConqueGdb_Disable = 0 <CR>
 map <F5> :%s/\s\+$//e <CR>:%s/\t/    /g<CR> :%s///g<CR>:set nohlsearch<CR>
-"""map <F6> :!/opt/local/bin/ctags --exclude=.git --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>:!cscope -Rb<CR>:cscope reset<CR>
-"""map <F6> :!/opt/local/bin/ctags --languages=C --exclude=.git --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR> :!cscope -Rb<CR>:cscope reset<CR>
-map <F6> :!find . -name \*.[ch] -exec ctags --sort=yes --c++-kinds=+p --fields=+iaS {} +<CR>:cscope reset<CR>
+map <F6> :!ctags --exclude=.git --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .
+"""<CR>:!cscope -Rb<CR>:cscope reset<CR>
+"""map <F6> :!ctags --languages=C --exclude=.git --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR> :!cscope -Rb<CR>:cscope reset<CR>
+"""map <F6> :!find . -name \*.[ch] -exec ctags --sort=yes --c++-kinds=+p --fields=+iaS {} +<CR>:cscope reset<CR>
 
 """ Insert doxygen comments
 map <f7> <ESC>0$80a <ESC>0l80ldwi///< comment <ESC>j0
@@ -143,3 +150,7 @@ let g:NERDTreeIndicatorMapCustom = {
 
 """map <F3> :!git diff --name-only<CR>
 """map <F4> :!git difftool --tool=vimdiff --no-prompt %<CR>
+hi DiffAdd      gui=none    guifg=NONE          guibg=#bada9f
+hi DiffChange   gui=none    guifg=NONE          guibg=#bada9f
+hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#bada9f
+hi DiffText     gui=none    guifg=NONE          guibg=#bada9f
