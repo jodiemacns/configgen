@@ -28,7 +28,9 @@
 #if [ ! -d "~/Mail" ]; then
 #        mkdir ~/Mail
 #fi
-./install_apps.sh $(cat apps.list)
+#./install_apps.sh $(cat apps.list)
+rm -fr ~/.config/awesome
+cp -fr ~/configgen/awesome ~/.config/awesome
 echo "source ~/configgen/bashrc" >> ~/.bashrc
 ./refreshlinks.sh
 
