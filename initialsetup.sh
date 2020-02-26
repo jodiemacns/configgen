@@ -31,6 +31,7 @@
 #./install_apps.sh $(cat apps.list)
 rm -fr ~/.config/awesome
 cp -fr ~/configgen/awesome ~/.config/awesome
+rm -fr ~/configgen/awesome
 echo "source ~/configgen/bashrc" >> ~/.bashrc
 ./refreshlinks.sh
 
