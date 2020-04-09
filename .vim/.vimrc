@@ -42,6 +42,9 @@ set path=$PWD/**
 set wildmenu
 set wildmode=longest:full,full
 
+highlight Visual cterm=bold ctermbg=Black ctermfg=NONE
+
+
 " " OmniCppComplete
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
