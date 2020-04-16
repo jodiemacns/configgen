@@ -28,7 +28,7 @@
 #include <stdbool.h>
 #include "FreeRTOS.h"
 #include "queue.h"
-#include "util.h"
+#include "utils.h"
 #include "tstring.h"
 #include "app_tasks.h"
 #include "comms.h"
@@ -77,7 +77,7 @@ void comms_task(void *vParam)
                     break;
             }
         }else{
-           dbg_printf("%s got nothing\n", bluetooth.myName);
+           dbg_printf("%s got nothing\n", MY_TASK_NAME);
         }
     }
     return;
