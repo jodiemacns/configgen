@@ -1,5 +1,11 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 execute pathogen#infect()
+
+"""colorschem evening
+"""set guioptions -=T
+"""set guioptions -=m
+"""set guioptions -=L
+
 """ ---------------------------------------------------------------------------
 """ Standard options
 syntax on
@@ -11,6 +17,7 @@ set number
 set laststatus=2
 set tags=./tags;,tags;
 """set tags+=/opt/nrf52_sdk/tags
+set tags+=/opt/siliconlabs/tags
 set hlsearch
 set spelllang=en_us
 set nospell
@@ -20,6 +27,13 @@ set path+=**
 set wildmenu
 set wildmode=longest:full,full
 
+hi Search ctermbg=grey  ctermfg=black
+hi Visual ctermbg=grey  ctermfg=black
+
+"""source ./flattened_dark.vim
+"""source ./flattened_light.vim
+source ~/configgen/.vim/meta5.vim
+
 """ ---------------------------------------------------------------------------
 """ Vundle package manger option
 call vundle#begin()
@@ -28,42 +42,16 @@ Plugin 'Conque-GDB'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scuilion/markdown-drawer'
-Plugin 'tomtom/checksyntax_vim'
-Plugin 'Xuyuanp/nerdtree-gid-plugin'
 Plugin 'tpope/vim-fugitive'
+"""Plugin 'godlygeek/tabular'
+"""Plugin 'plasticboy/vim-markdown'
+
 call vundle#end()
-let g:markdrawer_drawer_max_levels = 2
+let g:markdrawer_drawer_max_levels = 3
 """ ---------------------------------------------------------------------------
 """ OmniCppComplete for finishing structures from tag file
-"""Plugin 'OmniCppComplete'
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
-:set guioptions-=m  "remove menu bar
-:set guioptions-=T  "remove toolbar
-:set guioptions-=r  "remove right-hand scroll bar
-:set guioptions-=L  "remove left-hand scroll bar
+Plugin 'OmniCppComplete'
 
-""" Function keys.
-map <F1> :grep -i -r --include "*.[ch]" --include "*.cpp" reason .
-map <F2> :!tig <CR>
-map <F3> :!git diff --name-only<CR>
-map <F4> :!git difftool --tool=vimdiff --no-prompt %<CR>
-""" map <F5> : let g:ConqueGdb_Disable = 0 <CR>
-map <F5> :%s/\s\+$//e <CR>:%s/\t/    /g<CR> :%s///g<CR>:set nohlsearch<CR>
-map <F6> :!ctags --exclude=.git --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .
-"""<CR>:!cscope -Rb<CR>:cscope reset<CR>
-"""map <F6> :!ctags --languages=C --exclude=.git --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR> :!cscope -Rb<CR>:cscope reset<CR>
-"""map <F6> :!find . -name \*.[ch] -exec ctags --sort=yes --c++-kinds=+p --fields=+iaS {} +<CR>:cscope reset<CR>
-
-""" Insert doxygen comments
-map <f7> <ESC>0$80a <ESC>0l80ldwi///< comment <ESC>j0
-map <f8> <ESC>:cscope find a 
-"""map <F7> :vertical resize -10 <CR>
-"""map <F8> :vertical resize +10 <CR>
-map <F9>  :!make clean <CR>
-""" map <F10> :make -f makefile.generic release=001 <CR>
-map <F10> :make  <CR>
-map <F12> :!make prog<CR>
 
 " " OmniCppComplete
 let OmniCpp_NamespaceSearch = 1
@@ -78,10 +66,8 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
-map <F11> :let g:ConqueGdb_GdbExe = '/opt/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb'
-let g:ConqueGdb_GdbExe = '/opt/local/bin/ggdb'
-let g:ConqueGdb_GdbExe = '/opt/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb'
-let g:ConqueGdb_Leader = 't'
+"""map <F11> :let g:ConqueGdb_GdbExe = '/opt/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb'
+"""let g:ConqueGdb_GdbExe = '/opt/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gdb'
 let g:ConqueGdb_Disable = 1
 
 """ ---------------------------------------------------------------------------
@@ -93,17 +79,6 @@ let g:ConqueGdb_Disable = 1
 """ Nerdtree options
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
-
-""" ---------------------------------------------------------------------------
-:function Meow()
-:  echom "Meow!"
-:endfunction
-
-
-""":function Copen()
-""":  echom "Meow!"
-""":endfunction
-
 
 """ ---------------------------------------------------------------------------
 """ Cscope options. 
@@ -124,33 +99,40 @@ if has('cscope')
    endif
 endif
 
+command! Copen botright copen
+command! Pr !./open_flash.sh iot_valve.bin 
+command! Rw :%s/\s\+$//e 
+command! Rtab :%s/\t/    /e
+command! Rms :%s///e
+command! Cbuf :%bd|e#
 
-"""nerdtree-git-plugin 
+"""mand! Dbg normal mZ:ConqueGdb bt.out<CR><ESC><cr>i<c-c>ll<cr>c<cr><esc><c-w>k`Z
+command! Dbg normal mZ:ConqueGdb bt.out<CR>i<c-c>ll<cr>c<cr><esc><c-w>k`Z
+command! Db  normal mZ:ConqueGdb iot_valve.out<CR>i<c-c>ll<cr>c<cr><esc><c-w>k`Z
+command! Mc :make -j8 client 
+
+command! Toc normal yypVgudwV:s/ /-/g<CR>0i(#<ESC>A)<ESC>k0dwi[<ESC>A]<ESC>Jx
+
+let mapleader=" "
+
+""" Function keys.
+map <F1> :grep -i -r --include "*.[ch]" reason .
+map <F2> :!tig <CR>
+map <F3> :!git diff --name-only<CR>
+map <F4> :!git difftool --tool=vimdiff --no-prompt %<CR>
+map <F5> mz :Rw <CR> :Rtab <CR> :Rms <CR>:set nohlsearch<CR>`z
+map <F6> :!ctags --exclude=.git --exclude=docs --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+""" Insert the comments.
+map <F7> <ESC>$80a <ESC>080ld$
+map <F8> <ESC>$80a <ESC>060ld$i///< 
+map <F9>  :make clean <CR>
+map <F10> :make -j8 debuggdb<CR> :Copen <CR>
+map <F11> :colorscheme morning<CR>
+map <F12> :source ~/configgen/.vim/meta5.vim<CR>
+
+"""map <F5> : let g:ConqueGdb_Disable = 0 <CR>
+
+""" map <F10> :make -f makefile.generic release=001 <CR>
 
 
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "M",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "U",
-    \ "Renamed"   : "R",
-    \ "Unmerged"  : "x",
-    \ "Deleted"   : "p",
-    \ "Dirty"     : "D",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : 'I',
-    \ "Unknown"   : "?"
-    \ }
 
-:command Mkk make -e -f Makefile
-:command Copen :botright copen 30
-:command QQ  :wqa!
-""":command Caa !git diff --name-only
-:command D !git difftool --tool=vimdiff --no-prompt %
-:command C !clear ;git diff --name-only
-
-"""map <F3> :!git diff --name-only<CR>
-"""map <F4> :!git difftool --tool=vimdiff --no-prompt %<CR>
-hi DiffAdd      gui=none    guifg=NONE          guibg=#bada9f
-hi DiffChange   gui=none    guifg=NONE          guibg=#bada9f
-hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#bada9f
-hi DiffText     gui=none    guifg=NONE          guibg=#bada9f
