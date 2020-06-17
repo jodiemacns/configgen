@@ -1,6 +1,7 @@
 export EDITOR=vim
 export PATH=$PATH:~/configgen/
 export PATH=$PATH:~/configgen/bin/
+export PATH=$PATH:/opt/gcc-arm/bin/
 export GOPATH=~/go
 export RTV_BROWSER=w3m
 export BROWSER=w3m
