@@ -39,4 +39,4 @@ if [ "$TERM" = "linux" ]; then
     clear #for background artifacting
 fi
 
-~/configgen/randomjoke_seinfeld.sh
+~/configgen/bin/randquote.sh
