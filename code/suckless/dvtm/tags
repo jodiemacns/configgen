@@ -1,0 +1,670 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALT	dvtm.c	103;"	d	file:
+Action	dvtm.c	/^} Action;$/;"	t	typeref:struct:__anon9	file:
+BAR_ATTR	config.def.h	32;"	d
+BAR_ATTR	config.h	32;"	d
+BAR_AUTOHIDE	config.def.h	39;"	d
+BAR_AUTOHIDE	config.h	39;"	d
+BAR_BEGIN	config.def.h	34;"	d
+BAR_BEGIN	config.h	34;"	d
+BAR_BOTTOM	dvtm.c	/^enum { BAR_TOP, BAR_BOTTOM, BAR_OFF };$/;"	e	enum:__anon13	file:
+BAR_END	config.def.h	35;"	d
+BAR_END	config.h	35;"	d
+BAR_OFF	dvtm.c	/^enum { BAR_TOP, BAR_BOTTOM, BAR_OFF };$/;"	e	enum:__anon13	file:
+BAR_POS	config.def.h	37;"	d
+BAR_POS	config.h	37;"	d
+BAR_TOP	dvtm.c	/^enum { BAR_TOP, BAR_BOTTOM, BAR_OFF };$/;"	e	enum:__anon13	file:
+BIN	Makefile	/^BIN = dvtm dvtm-status dvtm-editor dvtm-pager$/;"	m
+BLUE	config.def.h	/^	BLUE,$/;"	e	enum:__anon18
+BLUE	config.h	/^	BLUE,$/;"	e	enum:__anon4
+Buffer	vt.c	/^} Buffer;$/;"	t	typeref:struct:__anon3	file:
+Button	dvtm.c	/^} Button;$/;"	t	typeref:struct:__anon11	file:
+CC	config.mk	/^CC ?= cc$/;"	m
+COLOR	config.def.h	24;"	d
+COLOR	config.h	24;"	d
+CONFIG_MOUSE	config.def.h	179;"	d
+CONFIG_MOUSE	config.h	179;"	d
+CPPFLAGS	config.mk	/^CPPFLAGS = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -D_XOPEN_SOURCE_EXTENDED$/;"	m
+CTRL	dvtm.c	105;"	d	file:
+CTRL	dvtm.c	108;"	d	file:
+CTRL	vt.c	76;"	d	file:
+CTRL	vt.c	79;"	d	file:
+CTRL_ALT	dvtm.c	110;"	d	file:
+Cell	vt.c	/^} Cell;$/;"	t	typeref:struct:__anon1	file:
+Client	dvtm.c	/^struct Client {$/;"	s	file:
+Client	dvtm.c	/^typedef struct Client Client;$/;"	t	typeref:struct:Client	file:
+Client::app	dvtm.c	/^	Vt *editor, *app;$/;"	m	struct:Client	file:	access:public
+Client::cmd	dvtm.c	/^	const char *cmd;$/;"	m	struct:Client	file:	access:public
+Client::died	dvtm.c	/^	volatile sig_atomic_t died;$/;"	m	struct:Client	file:	access:public
+Client::editor	dvtm.c	/^	Vt *editor, *app;$/;"	m	struct:Client	file:	access:public
+Client::editor_died	dvtm.c	/^	volatile sig_atomic_t editor_died;$/;"	m	struct:Client	file:	access:public
+Client::editor_fds	dvtm.c	/^	int editor_fds[2];$/;"	m	struct:Client	file:	access:public
+Client::h	dvtm.c	/^	unsigned short int h;$/;"	m	struct:Client	file:	access:public
+Client::has_title_line	dvtm.c	/^	bool has_title_line;$/;"	m	struct:Client	file:	access:public
+Client::id	dvtm.c	/^	unsigned short int id;$/;"	m	struct:Client	file:	access:public
+Client::minimized	dvtm.c	/^	bool minimized;$/;"	m	struct:Client	file:	access:public
+Client::next	dvtm.c	/^	Client *next;$/;"	m	struct:Client	file:	access:public
+Client::order	dvtm.c	/^	int order;$/;"	m	struct:Client	file:	access:public
+Client::pid	dvtm.c	/^	pid_t pid;$/;"	m	struct:Client	file:	access:public
+Client::prev	dvtm.c	/^	Client *prev;$/;"	m	struct:Client	file:	access:public
+Client::snext	dvtm.c	/^	Client *snext;$/;"	m	struct:Client	file:	access:public
+Client::tags	dvtm.c	/^	unsigned int tags;$/;"	m	struct:Client	file:	access:public
+Client::term	dvtm.c	/^	Vt *term;$/;"	m	struct:Client	file:	access:public
+Client::title	dvtm.c	/^	char title[255];$/;"	m	struct:Client	file:	access:public
+Client::urgent	dvtm.c	/^	bool urgent;$/;"	m	struct:Client	file:	access:public
+Client::w	dvtm.c	/^	unsigned short int w;$/;"	m	struct:Client	file:	access:public
+Client::window	dvtm.c	/^	WINDOW *window;$/;"	m	struct:Client	file:	access:public
+Client::x	dvtm.c	/^	unsigned short int x;$/;"	m	struct:Client	file:	access:public
+Client::y	dvtm.c	/^	unsigned short int y;$/;"	m	struct:Client	file:	access:public
+Cmd	dvtm.c	/^} Cmd;$/;"	t	typeref:struct:__anon12	file:
+CmdFifo	dvtm.c	/^} CmdFifo;$/;"	t	typeref:struct:__anon15	file:
+Color	dvtm.c	/^} Color;$/;"	t	typeref:struct:__anon7	file:
+ColorRule	dvtm.c	/^} ColorRule;$/;"	t	typeref:struct:__anon8	file:
+DEBUG_CFLAGS	Makefile	/^DEBUG_CFLAGS = ${CFLAGS} -UNDEBUG -O0 -g -ggdb -Wall -Wextra -Wno-unused-parameter$/;"	m
+DEFAULT	config.def.h	/^	DEFAULT,$/;"	e	enum:__anon18
+DEFAULT	config.h	/^	DEFAULT,$/;"	e	enum:__anon4
+ENABLE_MOUSE	config.def.h	182;"	d
+ENABLE_MOUSE	config.h	182;"	d
+ESCDELAY	dvtm.c	/^int ESCDELAY;$/;"	v
+Editor	dvtm.c	/^} Editor;$/;"	t	typeref:struct:__anon17	file:
+INCS	config.mk	/^INCS = -I.$/;"	m
+IS_CONTROL	vt.c	82;"	d	file:
+KeyBinding	dvtm.c	/^} KeyBinding;$/;"	t	typeref:struct:__anon10	file:
+KeyCombo	dvtm.c	/^typedef unsigned int KeyCombo[MAX_KEYS];$/;"	t	file:
+LENGTH	dvtm.c	169;"	d	file:
+LENGTH	vt.c	84;"	d	file:
+LIBS	config.mk	/^LIBS = -lc -lutil -lncursesw$/;"	m
+Layout	dvtm.c	/^} Layout;$/;"	t	typeref:struct:__anon6	file:
+MANPREFIX	config.mk	/^MANPREFIX = ${PREFIX}\/share\/man$/;"	m
+MANUALS	Makefile	/^MANUALS = dvtm.1 dvtm-editor.1 dvtm-pager.1$/;"	m
+MAX	dvtm.c	170;"	d	file:
+MAX_ARGS	dvtm.c	112;"	d	file:
+MAX_COLOR_PAIRS	vt.c	68;"	d	file:
+MAX_COLOR_PAIRS	vt.c	72;"	d	file:
+MAX_KEYS	dvtm.c	119;"	d	file:
+MFACT	config.def.h	41;"	d
+MFACT	config.h	41;"	d
+MIN	dvtm.c	171;"	d	file:
+MIN	vt.c	83;"	d	file:
+MOD	config.def.h	72;"	d
+MOD	config.h	72;"	d
+NCURSES_ACS	vt.c	57;"	d	file:
+NCURSES_ACS	vt.c	59;"	d	file:
+NCURSES_ATTR_SHIFT	vt.c	52;"	d	file:
+NCURSES_EXT_COLORS	vt.c	65;"	d	file:
+NMASTER	config.def.h	43;"	d
+NMASTER	config.h	43;"	d
+NORMAL_ATTR	config.def.h	28;"	d
+NORMAL_ATTR	config.h	28;"	d
+PREFIX	config.mk	/^PREFIX ?= \/usr\/local$/;"	m
+Register	dvtm.c	/^} Register;$/;"	t	typeref:struct:__anon16	file:
+Row	vt.c	/^} Row;$/;"	t	typeref:struct:__anon2	file:
+SCROLL_HISTORY	config.def.h	45;"	d
+SCROLL_HISTORY	config.h	45;"	d
+SELECTED_ATTR	config.def.h	26;"	d
+SELECTED_ATTR	config.h	26;"	d
+SRC	Makefile	/^SRC = dvtm.c vt.c$/;"	m
+Screen	dvtm.c	/^} Screen;$/;"	t	typeref:struct:__anon5	file:
+StatusBar	dvtm.c	/^} StatusBar;$/;"	t	typeref:struct:__anon14	file:
+TAGKEYS	config.def.h	73;"	d
+TAGKEYS	config.h	73;"	d
+TAGMASK	dvtm.c	172;"	d	file:
+TAG_NORMAL	config.def.h	51;"	d
+TAG_NORMAL	config.h	51;"	d
+TAG_OCCUPIED	config.def.h	53;"	d
+TAG_OCCUPIED	config.h	53;"	d
+TAG_SEL	config.def.h	49;"	d
+TAG_SEL	config.h	49;"	d
+TAG_SYMBOL	config.def.h	47;"	d
+TAG_SYMBOL	config.h	47;"	d
+TAG_URGENT	config.def.h	55;"	d
+TAG_URGENT	config.h	55;"	d
+TERMINFO	config.mk	/^TERMINFO := ${DESTDIR}${PREFIX}\/share\/terminfo$/;"	m
+TTY_NAME_MAX	forkpty-sunos.c	26;"	d	file:
+URGENT_ATTR	config.def.h	30;"	d
+URGENT_ATTR	config.h	30;"	d
+VERSION	Makefile	/^VERSION = $(shell git describe --always --dirty 2>\/dev\/null || echo "0.15-git")$/;"	m
+VT_H	vt.h	19;"	d
+Vt	vt.c	/^struct Vt {$/;"	s	file:
+Vt	vt.h	/^typedef struct Vt Vt;$/;"	t	typeref:struct:Vt
+Vt::bell	vt.c	/^	unsigned bell:1;$/;"	m	struct:Vt	file:	access:public
+Vt::buffer	vt.c	/^	Buffer *buffer;          \/* currently active buffer (one of the above) *\/$/;"	m	struct:Vt	file:	access:public
+Vt::buffer_alternate	vt.c	/^	Buffer buffer_alternate; \/* alternate screen buffer *\/$/;"	m	struct:Vt	file:	access:public
+Vt::buffer_normal	vt.c	/^	Buffer buffer_normal;    \/* normal screen buffer *\/$/;"	m	struct:Vt	file:	access:public
+Vt::charsets	vt.c	/^	bool charsets[2];$/;"	m	struct:Vt	file:	access:public
+Vt::curshid	vt.c	/^	unsigned curshid:1;$/;"	m	struct:Vt	file:	access:public
+Vt::curskeymode	vt.c	/^	unsigned curskeymode:1;$/;"	m	struct:Vt	file:	access:public
+Vt::data	vt.c	/^	void *data;              \/* user supplied data *\/$/;"	m	struct:Vt	file:	access:public
+Vt::defattrs	vt.c	/^	attr_t defattrs;         \/* attributes to use for normal\/empty cells *\/$/;"	m	struct:Vt	file:	access:public
+Vt::defbg	vt.c	/^	short deffg, defbg;      \/* colors to use for back normal\/empty cells (white\/black) *\/$/;"	m	struct:Vt	file:	access:public
+Vt::deffg	vt.c	/^	short deffg, defbg;      \/* colors to use for back normal\/empty cells (white\/black) *\/$/;"	m	struct:Vt	file:	access:public
+Vt::ebuf	vt.c	/^	char ebuf[BUFSIZ];$/;"	m	struct:Vt	file:	access:public
+Vt::elen	vt.c	/^	unsigned int rlen, elen;$/;"	m	struct:Vt	file:	access:public
+Vt::escaped	vt.c	/^	unsigned escaped:1;$/;"	m	struct:Vt	file:	access:public
+Vt::graphmode	vt.c	/^	unsigned graphmode:1;$/;"	m	struct:Vt	file:	access:public
+Vt::insert	vt.c	/^	unsigned insert:1;$/;"	m	struct:Vt	file:	access:public
+Vt::mousetrack	vt.c	/^	unsigned mousetrack:1;$/;"	m	struct:Vt	file:	access:public
+Vt::pid	vt.c	/^	pid_t pid;               \/* process id of the process running in this vt *\/$/;"	m	struct:Vt	file:	access:public
+Vt::pty	vt.c	/^	int pty;                 \/* master side pty file descriptor *\/$/;"	m	struct:Vt	file:	access:public
+Vt::rbuf	vt.c	/^	char rbuf[BUFSIZ];$/;"	m	struct:Vt	file:	access:public
+Vt::relposmode	vt.c	/^	unsigned relposmode:1;$/;"	m	struct:Vt	file:	access:public
+Vt::rlen	vt.c	/^	unsigned int rlen, elen;$/;"	m	struct:Vt	file:	access:public
+Vt::savgraphmode	vt.c	/^	unsigned savgraphmode:1;$/;"	m	struct:Vt	file:	access:public
+Vt::scol	vt.c	/^	int srow, scol;          \/* last known offset to display start row, start column *\/$/;"	m	struct:Vt	file:	access:public
+Vt::seen_input	vt.c	/^	unsigned seen_input:1;$/;"	m	struct:Vt	file:	access:public
+Vt::srow	vt.c	/^	int srow, scol;          \/* last known offset to display start row, start column *\/$/;"	m	struct:Vt	file:	access:public
+Vt::title	vt.c	/^	char title[256];         \/* xterm style window title *\/$/;"	m	struct:Vt	file:	access:public
+Vt::title_handler	vt.c	/^	vt_title_handler_t title_handler; \/* hook which is called when title changes *\/$/;"	m	struct:Vt	file:	access:public
+Vt::urgent_handler	vt.c	/^	vt_urgent_handler_t urgent_handler; \/* hook which is called upon bell *\/$/;"	m	struct:Vt	file:	access:public
+__anon10::action	dvtm.c	/^	Action action;$/;"	m	struct:__anon10	file:	access:public
+__anon10::keys	dvtm.c	/^	KeyCombo keys;$/;"	m	struct:__anon10	file:	access:public
+__anon11::action	dvtm.c	/^	Action action;$/;"	m	struct:__anon11	file:	access:public
+__anon11::mask	dvtm.c	/^	mmask_t mask;$/;"	m	struct:__anon11	file:	access:public
+__anon12::action	dvtm.c	/^	Action action;$/;"	m	struct:__anon12	file:	access:public
+__anon12::name	dvtm.c	/^	const char *name;$/;"	m	struct:__anon12	file:	access:public
+__anon14::autohide	dvtm.c	/^	bool autohide;$/;"	m	struct:__anon14	file:	access:public
+__anon14::fd	dvtm.c	/^	int fd;$/;"	m	struct:__anon14	file:	access:public
+__anon14::file	dvtm.c	/^	const char *file;$/;"	m	struct:__anon14	file:	access:public
+__anon14::h	dvtm.c	/^	unsigned short int h;$/;"	m	struct:__anon14	file:	access:public
+__anon14::lastpos	dvtm.c	/^	int pos, lastpos;$/;"	m	struct:__anon14	file:	access:public
+__anon14::pos	dvtm.c	/^	int pos, lastpos;$/;"	m	struct:__anon14	file:	access:public
+__anon14::text	dvtm.c	/^	char text[512];$/;"	m	struct:__anon14	file:	access:public
+__anon14::y	dvtm.c	/^	unsigned short int y;$/;"	m	struct:__anon14	file:	access:public
+__anon15::fd	dvtm.c	/^	int fd;$/;"	m	struct:__anon15	file:	access:public
+__anon15::file	dvtm.c	/^	const char *file;$/;"	m	struct:__anon15	file:	access:public
+__anon15::id	dvtm.c	/^	unsigned short int id;$/;"	m	struct:__anon15	file:	access:public
+__anon16::data	dvtm.c	/^	char *data;$/;"	m	struct:__anon16	file:	access:public
+__anon16::len	dvtm.c	/^	size_t len;$/;"	m	struct:__anon16	file:	access:public
+__anon16::size	dvtm.c	/^	size_t size;$/;"	m	struct:__anon16	file:	access:public
+__anon17::argv	dvtm.c	/^	const char *argv[4];$/;"	m	struct:__anon17	file:	access:public
+__anon17::color	dvtm.c	/^	bool color;$/;"	m	struct:__anon17	file:	access:public
+__anon17::filter	dvtm.c	/^	bool filter;$/;"	m	struct:__anon17	file:	access:public
+__anon17::name	dvtm.c	/^	char *name;$/;"	m	struct:__anon17	file:	access:public
+__anon1::attr	vt.c	/^	attr_t attr;$/;"	m	struct:__anon1	file:	access:public
+__anon1::bg	vt.c	/^	short bg;$/;"	m	struct:__anon1	file:	access:public
+__anon1::fg	vt.c	/^	short fg;$/;"	m	struct:__anon1	file:	access:public
+__anon1::text	vt.c	/^	wchar_t text;$/;"	m	struct:__anon1	file:	access:public
+__anon2::cells	vt.c	/^	Cell *cells;$/;"	m	struct:__anon2	file:	access:public
+__anon2::dirty	vt.c	/^	unsigned dirty:1;$/;"	m	struct:__anon2	file:	access:public
+__anon3::cols	vt.c	/^	int rows, cols;        \/* current dimension of buffer *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::curattrs	vt.c	/^	attr_t curattrs, savattrs; \/* current and saved attributes for cells *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::curbg	vt.c	/^	short curfg, curbg;    \/* current fore and background colors *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::curfg	vt.c	/^	short curfg, curbg;    \/* current fore and background colors *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::curs_col	vt.c	/^	int curs_col;          \/* current cursor column (zero based) *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::curs_row	vt.c	/^	Row *curs_row;         \/* row on which the cursor currently resides *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::curs_scol	vt.c	/^	int curs_srow, curs_scol; \/* saved cursor row\/colmn (zero based) *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::curs_srow	vt.c	/^	int curs_srow, curs_scol; \/* saved cursor row\/colmn (zero based) *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::lines	vt.c	/^	Row *lines;            \/* array of Row pointers of size 'rows' *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::maxcols	vt.c	/^	int maxcols;           \/* allocated cells (maximal cols over time) *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::rows	vt.c	/^	int rows, cols;        \/* current dimension of buffer *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::savattrs	vt.c	/^	attr_t curattrs, savattrs; \/* current and saved attributes for cells *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::savbg	vt.c	/^	short savfg, savbg;    \/* saved colors *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::savfg	vt.c	/^	short savfg, savbg;    \/* saved colors *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::scroll_above	vt.c	/^	int scroll_above;      \/* number of lines above current viewport *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::scroll_below	vt.c	/^	int scroll_below;      \/* number of lines below current viewport *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::scroll_bot	vt.c	/^	Row *scroll_bot;       \/* row in lines where scrolling region ends *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::scroll_buf	vt.c	/^	Row *scroll_buf;       \/* a ring buffer holding the scroll back content *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::scroll_index	vt.c	/^	int scroll_index;      \/* current index into the ring buffer *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::scroll_size	vt.c	/^	int scroll_size;       \/* maximal capacity of scroll back buffer (in lines) *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::scroll_top	vt.c	/^	Row *scroll_top;       \/* row in lines where scrolling region starts *\/$/;"	m	struct:__anon3	file:	access:public
+__anon3::tabs	vt.c	/^	bool *tabs;            \/* a boolean flag for each column whether it is a tab *\/$/;"	m	struct:__anon3	file:	access:public
+__anon5::h	dvtm.c	/^	int h;$/;"	m	struct:__anon5	file:	access:public
+__anon5::history	dvtm.c	/^	int history;$/;"	m	struct:__anon5	file:	access:public
+__anon5::mfact	dvtm.c	/^	float mfact;$/;"	m	struct:__anon5	file:	access:public
+__anon5::need_resize	dvtm.c	/^	volatile sig_atomic_t need_resize;$/;"	m	struct:__anon5	file:	access:public
+__anon5::nmaster	dvtm.c	/^	unsigned int nmaster;$/;"	m	struct:__anon5	file:	access:public
+__anon5::w	dvtm.c	/^	int w;$/;"	m	struct:__anon5	file:	access:public
+__anon6::arrange	dvtm.c	/^	void (*arrange)(void);$/;"	m	struct:__anon6	file:	access:public
+__anon6::symbol	dvtm.c	/^	const char *symbol;$/;"	m	struct:__anon6	file:	access:public
+__anon7::bg	dvtm.c	/^	short bg;$/;"	m	struct:__anon7	file:	access:public
+__anon7::bg256	dvtm.c	/^	short bg256;$/;"	m	struct:__anon7	file:	access:public
+__anon7::fg	dvtm.c	/^	short fg;$/;"	m	struct:__anon7	file:	access:public
+__anon7::fg256	dvtm.c	/^	short fg256;$/;"	m	struct:__anon7	file:	access:public
+__anon7::pair	dvtm.c	/^	short pair;$/;"	m	struct:__anon7	file:	access:public
+__anon8::attrs	dvtm.c	/^	attr_t attrs;$/;"	m	struct:__anon8	file:	access:public
+__anon8::color	dvtm.c	/^	Color *color;$/;"	m	struct:__anon8	file:	access:public
+__anon8::title	dvtm.c	/^	const char *title;$/;"	m	struct:__anon8	file:	access:public
+__anon9::args	dvtm.c	/^	const char *args[3];$/;"	m	struct:__anon9	file:	access:public
+__anon9::cmd	dvtm.c	/^	void (*cmd)(const char *args[]);$/;"	m	struct:__anon9	file:	access:public
+action	dvtm.c	/^	Action action;$/;"	m	struct:__anon10	file:	access:public
+action	dvtm.c	/^	Action action;$/;"	m	struct:__anon11	file:	access:public
+action	dvtm.c	/^	Action action;$/;"	m	struct:__anon12	file:	access:public
+actions	config.def.h	/^static Action actions[] = {$/;"	v
+actions	config.h	/^static Action actions[] = {$/;"	v
+app	dvtm.c	/^	Vt *editor, *app;$/;"	m	struct:Client	file:	access:public
+applycolorrules	dvtm.c	/^applycolorrules(Client *c) {$/;"	f	file:	signature:(Client *c)
+args	dvtm.c	/^	const char *args[3];$/;"	m	struct:__anon9	file:	access:public
+argv	dvtm.c	/^	const char *argv[4];$/;"	m	struct:__anon17	file:	access:public
+arrange	dvtm.c	/^	void (*arrange)(void);$/;"	m	struct:__anon6	file:	access:public
+arrange	dvtm.c	/^arrange(void) {$/;"	f	file:	signature:(void)
+attach	dvtm.c	/^attach(Client *c) {$/;"	f	file:	signature:(Client *c)
+attachafter	dvtm.c	/^attachafter(Client *c, Client *a) { \/* attach c after a *\/$/;"	f	file:	signature:(Client *c, Client *a)
+attachstack	dvtm.c	/^attachstack(Client *c) {$/;"	f	file:	signature:(Client *c)
+attr	vt.c	/^	attr_t attr;$/;"	m	struct:__anon1	file:	access:public
+attributes_restore	vt.c	/^static void attributes_restore(Vt *t)$/;"	f	file:	signature:(Vt *t)
+attributes_save	vt.c	/^static void attributes_save(Vt *t)$/;"	f	file:	signature:(Vt *t)
+attrs	dvtm.c	/^	attr_t attrs;$/;"	m	struct:__anon8	file:	access:public
+autohide	dvtm.c	/^	bool autohide;$/;"	m	struct:__anon14	file:	access:public
+bar	dvtm.c	/^static StatusBar bar = { .fd = -1, .lastpos = BAR_POS, .pos = BAR_POS, .autohide = BAR_AUTOHIDE, .h = 1 };$/;"	v	file:
+bell	vt.c	/^	unsigned bell:1;$/;"	m	struct:Vt	file:	access:public
+bg	dvtm.c	/^	short bg;$/;"	m	struct:__anon7	file:	access:public
+bg	vt.c	/^	short bg;$/;"	m	struct:__anon1	file:	access:public
+bg256	dvtm.c	/^	short bg256;$/;"	m	struct:__anon7	file:	access:public
+bindings	config.def.h	/^static KeyBinding bindings[] = {$/;"	v
+bindings	config.h	/^static KeyBinding bindings[] = {$/;"	v
+bitoftag	dvtm.c	/^bitoftag(const char *tag) {$/;"	f	file:	signature:(const char *tag)
+bstack	bstack.c	/^static void bstack(void)$/;"	f	file:	signature:(void)
+buffer	vt.c	/^	Buffer *buffer;          \/* currently active buffer (one of the above) *\/$/;"	m	struct:Vt	file:	access:public
+buffer_alternate	vt.c	/^	Buffer buffer_alternate; \/* alternate screen buffer *\/$/;"	m	struct:Vt	file:	access:public
+buffer_boundry	vt.c	/^static void buffer_boundry(Buffer *b, Row **bs, Row **be, Row **as, Row **ae) {$/;"	f	file:	signature:(Buffer *b, Row **bs, Row **be, Row **as, Row **ae)
+buffer_clear	vt.c	/^static void buffer_clear(Buffer *b)$/;"	f	file:	signature:(Buffer *b)
+buffer_free	vt.c	/^static void buffer_free(Buffer *b)$/;"	f	file:	signature:(Buffer *b)
+buffer_init	vt.c	/^static bool buffer_init(Buffer *b, int rows, int cols, int scroll_size)$/;"	f	file:	signature:(Buffer *b, int rows, int cols, int scroll_size)
+buffer_normal	vt.c	/^	Buffer buffer_normal;    \/* normal screen buffer *\/$/;"	m	struct:Vt	file:	access:public
+buffer_resize	vt.c	/^static void buffer_resize(Buffer *b, int rows, int cols)$/;"	f	file:	signature:(Buffer *b, int rows, int cols)
+buffer_row_first	vt.c	/^static Row *buffer_row_first(Buffer *b) {$/;"	f	file:	signature:(Buffer *b)
+buffer_row_last	vt.c	/^static Row *buffer_row_last(Buffer *b) {$/;"	f	file:	signature:(Buffer *b)
+buffer_row_next	vt.c	/^static Row *buffer_row_next(Buffer *b, Row *row)$/;"	f	file:	signature:(Buffer *b, Row *row)
+buffer_row_prev	vt.c	/^static Row *buffer_row_prev(Buffer *b, Row *row)$/;"	f	file:	signature:(Buffer *b, Row *row)
+buffer_scroll	vt.c	/^static void buffer_scroll(Buffer *b, int s)$/;"	f	file:	signature:(Buffer *b, int s)
+build_attrs	vt.c	/^static attr_t build_attrs(attr_t curattrs)$/;"	f	file:	signature:(attr_t curattrs)
+buttons	config.def.h	/^static Button buttons[] = {$/;"	v
+buttons	config.h	/^static Button buttons[] = {$/;"	v
+cancel_escape_sequence	vt.c	/^static void cancel_escape_sequence(Vt *t)$/;"	f	file:	signature:(Vt *t)
+cells	vt.c	/^	Cell *cells;$/;"	m	struct:__anon2	file:	access:public
+charsets	vt.c	/^	bool charsets[2];$/;"	m	struct:Vt	file:	access:public
+checkshell	dvtm.c	/^checkshell(const char *shell) {$/;"	f	file:	signature:(const char *shell)
+cleanup	dvtm.c	/^cleanup(void) {$/;"	f	file:	signature:(void)
+clients	dvtm.c	/^static Client *clients = NULL;$/;"	v	file:
+cmd	dvtm.c	/^	const char *cmd;$/;"	m	struct:Client	file:	access:public
+cmd	dvtm.c	/^	void (*cmd)(const char *args[]);$/;"	m	struct:__anon9	file:	access:public
+cmdfifo	dvtm.c	/^static CmdFifo cmdfifo = { .fd = -1 };$/;"	v	file:
+color	dvtm.c	/^	Color *color;$/;"	m	struct:__anon8	file:	access:public
+color	dvtm.c	/^	bool color;$/;"	m	struct:__anon17	file:	access:public
+color2palette	vt.c	/^static short *color2palette, default_fg, default_bg;$/;"	v	file:
+color_hash	vt.c	/^static unsigned int color_hash(short fg, short bg)$/;"	f	file:	signature:(short fg, short bg)
+color_pair_current	vt.c	/^static short color_pairs_reserved, color_pairs_max, color_pair_current;$/;"	v	file:
+color_pairs_max	vt.c	/^static short color_pairs_reserved, color_pairs_max, color_pair_current;$/;"	v	file:
+color_pairs_reserved	vt.c	/^static short color_pairs_reserved, color_pairs_max, color_pair_current;$/;"	v	file:
+colorrules	config.def.h	/^static const ColorRule colorrules[] = {$/;"	v
+colorrules	config.h	/^static const ColorRule colorrules[] = {$/;"	v
+colors	config.def.h	/^static Color colors[] = {$/;"	v
+colors	config.h	/^static Color colors[] = {$/;"	v
+cols	vt.c	/^	int rows, cols;        \/* current dimension of buffer *\/$/;"	m	struct:__anon3	file:	access:public
+commands	config.def.h	/^static Cmd commands[] = {$/;"	v
+commands	config.h	/^static Cmd commands[] = {$/;"	v
+copymode	dvtm.c	/^copymode(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+copymode	dvtm.c	/^static void copymode(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+copyreg	dvtm.c	/^static Register copyreg;$/;"	v	file:
+create	dvtm.c	/^create(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+create	dvtm.c	/^static void create(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+curattrs	vt.c	/^	attr_t curattrs, savattrs; \/* current and saved attributes for cells *\/$/;"	m	struct:__anon3	file:	access:public
+curbg	vt.c	/^	short curfg, curbg;    \/* current fore and background colors *\/$/;"	m	struct:__anon3	file:	access:public
+curfg	vt.c	/^	short curfg, curbg;    \/* current fore and background colors *\/$/;"	m	struct:__anon3	file:	access:public
+curs_col	vt.c	/^	int curs_col;          \/* current cursor column (zero based) *\/$/;"	m	struct:__anon3	file:	access:public
+curs_row	vt.c	/^	Row *curs_row;         \/* row on which the cursor currently resides *\/$/;"	m	struct:__anon3	file:	access:public
+curs_scol	vt.c	/^	int curs_srow, curs_scol; \/* saved cursor row\/colmn (zero based) *\/$/;"	m	struct:__anon3	file:	access:public
+curs_srow	vt.c	/^	int curs_srow, curs_scol; \/* saved cursor row\/colmn (zero based) *\/$/;"	m	struct:__anon3	file:	access:public
+curshid	vt.c	/^	unsigned curshid:1;$/;"	m	struct:Vt	file:	access:public
+curskeymode	vt.c	/^	unsigned curskeymode:1;$/;"	m	struct:Vt	file:	access:public
+cursor_clamp	vt.c	/^static void cursor_clamp(Vt *t)$/;"	f	file:	signature:(Vt *t)
+cursor_line_down	vt.c	/^static void cursor_line_down(Vt *t)$/;"	f	file:	signature:(Vt *t)
+cursor_restore	vt.c	/^static void cursor_restore(Vt *t)$/;"	f	file:	signature:(Vt *t)
+cursor_save	vt.c	/^static void cursor_save(Vt *t)$/;"	f	file:	signature:(Vt *t)
+data	dvtm.c	/^	char *data;$/;"	m	struct:__anon16	file:	access:public
+data	vt.c	/^	void *data;              \/* user supplied data *\/$/;"	m	struct:Vt	file:	access:public
+debug	dvtm.c	175;"	d	file:
+debug	dvtm.c	177;"	d	file:
+defattrs	vt.c	/^	attr_t defattrs;         \/* attributes to use for normal\/empty cells *\/$/;"	m	struct:Vt	file:	access:public
+default_bg	vt.c	/^static short *color2palette, default_fg, default_bg;$/;"	v	file:
+default_fg	vt.c	/^static short *color2palette, default_fg, default_bg;$/;"	v	file:
+defbg	vt.c	/^	short deffg, defbg;      \/* colors to use for back normal\/empty cells (white\/black) *\/$/;"	m	struct:Vt	file:	access:public
+deffg	vt.c	/^	short deffg, defbg;      \/* colors to use for back normal\/empty cells (white\/black) *\/$/;"	m	struct:Vt	file:	access:public
+destroy	dvtm.c	/^destroy(Client *c) {$/;"	f	file:	signature:(Client *c)
+detach	dvtm.c	/^detach(Client *c) {$/;"	f	file:	signature:(Client *c)
+detachstack	dvtm.c	/^detachstack(Client *c) {$/;"	f	file:	signature:(Client *c)
+died	dvtm.c	/^	volatile sig_atomic_t died;$/;"	m	struct:Client	file:	access:public
+dirty	vt.c	/^	unsigned dirty:1;$/;"	m	struct:__anon2	file:	access:public
+draw	dvtm.c	/^draw(Client *c) {$/;"	f	file:	signature:(Client *c)
+draw_all	dvtm.c	/^draw_all(void) {$/;"	f	file:	signature:(void)
+draw_border	dvtm.c	/^draw_border(Client *c) {$/;"	f	file:	signature:(Client *c)
+draw_content	dvtm.c	/^draw_content(Client *c) {$/;"	f	file:	signature:(Client *c)
+drawbar	dvtm.c	/^drawbar(void) {$/;"	f	file:	signature:(void)
+dvtm_cmd	testsuite.sh	/^dvtm_cmd() {$/;"	f
+dvtm_input	testsuite.sh	/^dvtm_input() {$/;"	f
+dvtm_name	dvtm.c	/^static const char *dvtm_name = "dvtm";$/;"	v	file:
+dwindle	fibonacci.c	/^static void dwindle(void)$/;"	f	file:	signature:(void)
+ebuf	vt.c	/^	char ebuf[BUFSIZ];$/;"	m	struct:Vt	file:	access:public
+editor	dvtm.c	/^	Vt *editor, *app;$/;"	m	struct:Client	file:	access:public
+editor_died	dvtm.c	/^	volatile sig_atomic_t editor_died;$/;"	m	struct:Client	file:	access:public
+editor_fds	dvtm.c	/^	int editor_fds[2];$/;"	m	struct:Client	file:	access:public
+elen	vt.c	/^	unsigned int rlen, elen;$/;"	m	struct:Vt	file:	access:public
+eprint	dvtm.c	/^eprint(const char *errstr, ...) {$/;"	f	file:	signature:(const char *errstr, ...)
+error	dvtm-editor.c	/^static void error(const char *msg, ...) {$/;"	f	file:	signature:(const char *msg, ...)
+error	dvtm.c	/^error(const char *errstr, ...) {$/;"	f	file:	signature:(const char *errstr, ...)
+escaped	vt.c	/^	unsigned escaped:1;$/;"	m	struct:Vt	file:	access:public
+fd	dvtm.c	/^	int fd;$/;"	m	struct:__anon14	file:	access:public
+fd	dvtm.c	/^	int fd;$/;"	m	struct:__anon15	file:	access:public
+fg	dvtm.c	/^	short fg;$/;"	m	struct:__anon7	file:	access:public
+fg	vt.c	/^	short fg;$/;"	m	struct:__anon1	file:	access:public
+fg256	dvtm.c	/^	short fg256;$/;"	m	struct:__anon7	file:	access:public
+fibonacci	fibonacci.c	/^static void fibonacci(int s)$/;"	f	file:	signature:(int s)
+file	dvtm.c	/^	const char *file;$/;"	m	struct:__anon14	file:	access:public
+file	dvtm.c	/^	const char *file;$/;"	m	struct:__anon15	file:	access:public
+filter	dvtm.c	/^	bool filter;$/;"	m	struct:__anon17	file:	access:public
+focus	dvtm.c	/^focus(Client *c) {$/;"	f	file:	signature:(Client *c)
+focus	dvtm.c	/^static void focus(Client *c);$/;"	p	file:	signature:(Client *c)
+focusdown	dvtm.c	/^focusdown(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusdown	dvtm.c	/^static void focusdown(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusid	dvtm.c	/^focusid(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusid	dvtm.c	/^static void focusid(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focuslast	dvtm.c	/^focuslast(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focuslast	dvtm.c	/^static void focuslast(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusleft	dvtm.c	/^focusleft(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusleft	dvtm.c	/^static void focusleft(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusn	dvtm.c	/^focusn(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusn	dvtm.c	/^static void focusn(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusnext	dvtm.c	/^focusnext(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusnext	dvtm.c	/^static void focusnext(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusnextnm	dvtm.c	/^focusnextnm(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusnextnm	dvtm.c	/^static void focusnextnm(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusprev	dvtm.c	/^focusprev(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusprev	dvtm.c	/^static void focusprev(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusprevnm	dvtm.c	/^focusprevnm(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusprevnm	dvtm.c	/^static void focusprevnm(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusright	dvtm.c	/^focusright(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusright	dvtm.c	/^static void focusright(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+focusup	dvtm.c	/^focusup(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+focusup	dvtm.c	/^static void focusup(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+forkpty	forkpty-aix.c	/^pid_t forkpty(int *master, char *name, struct termios *tio, struct winsize *ws)$/;"	f	signature:(int *master, char *name, struct termios *tio, struct winsize *ws)
+forkpty	forkpty-sunos.c	/^pid_t forkpty(int *master, char *name, struct termios *tio, struct winsize *ws)$/;"	f	signature:(int *master, char *name, struct termios *tio, struct winsize *ws)
+fullscreen	fullscreen.c	/^static void fullscreen(void)$/;"	f	file:	signature:(void)
+get_client_by_coord	dvtm.c	/^get_client_by_coord(unsigned int x, unsigned int y) {$/;"	f	file:	signature:(unsigned int x, unsigned int y)
+get_cmd_by_name	dvtm.c	/^get_cmd_by_name(const char *name) {$/;"	f	file:	signature:(const char *name)
+get_vt100_graphic	vt.c	/^static wchar_t get_vt100_graphic(char c)$/;"	f	file:	signature:(char c)
+getcwd_by_pid	dvtm.c	/^static char *getcwd_by_pid(Client *c) {$/;"	f	file:	signature:(Client *c)
+getshell	dvtm.c	/^getshell(void) {$/;"	f	file:	signature:(void)
+graphmode	vt.c	/^	unsigned graphmode:1;$/;"	m	struct:Vt	file:	access:public
+grid	grid.c	/^static void grid(void)$/;"	f	file:	signature:(void)
+h	dvtm.c	/^	int h;$/;"	m	struct:__anon5	file:	access:public
+h	dvtm.c	/^	unsigned short int h;$/;"	m	struct:Client	file:	access:public
+h	dvtm.c	/^	unsigned short int h;$/;"	m	struct:__anon14	file:	access:public
+handle_cmdfifo	dvtm.c	/^handle_cmdfifo(void) {$/;"	f	file:	signature:(void)
+handle_editor	dvtm.c	/^handle_editor(Client *c) {$/;"	f	file:	signature:(Client *c)
+handle_mouse	dvtm.c	/^handle_mouse(void) {$/;"	f	file:	signature:(void)
+handle_statusbar	dvtm.c	/^handle_statusbar(void) {$/;"	f	file:	signature:(void)
+has_default_colors	vt.c	/^static bool is_utf8, has_default_colors;$/;"	v	file:
+has_title_line	dvtm.c	/^	bool has_title_line;$/;"	m	struct:Client	file:	access:public
+hidebar	dvtm.c	/^hidebar(void) {$/;"	f	file:	signature:(void)
+history	dvtm.c	/^	int history;$/;"	m	struct:__anon5	file:	access:public
+id	dvtm.c	/^	unsigned short int id;$/;"	m	struct:Client	file:	access:public
+id	dvtm.c	/^	unsigned short int id;$/;"	m	struct:__anon15	file:	access:public
+incnmaster	dvtm.c	/^incnmaster(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+incnmaster	dvtm.c	/^static void incnmaster(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+init_colors	vt.c	/^static void init_colors(void)$/;"	f	file:	signature:(void)
+insert	vt.c	/^	unsigned insert:1;$/;"	m	struct:Vt	file:	access:public
+interpret_csi	vt.c	/^static void interpret_csi(Vt *t)$/;"	f	file:	signature:(Vt *t)
+interpret_csi_c	vt.c	/^static void interpret_csi_c(Vt *t, char verb, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, char verb, int param[], int pcount)
+interpret_csi_cup	vt.c	/^static void interpret_csi_cup(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_dch	vt.c	/^static void interpret_csi_dch(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_decstbm	vt.c	/^static void interpret_csi_decstbm(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_dl	vt.c	/^static void interpret_csi_dl(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_ech	vt.c	/^static void interpret_csi_ech(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_ed	vt.c	/^static void interpret_csi_ed(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_el	vt.c	/^static void interpret_csi_el(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_ich	vt.c	/^static void interpret_csi_ich(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_il	vt.c	/^static void interpret_csi_il(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_csi_ind	vt.c	/^static void interpret_csi_ind(Vt *t)$/;"	f	file:	signature:(Vt *t)
+interpret_csi_mode	vt.c	/^static void interpret_csi_mode(Vt *t, int param[], int pcount, bool set)$/;"	f	file:	signature:(Vt *t, int param[], int pcount, bool set)
+interpret_csi_nel	vt.c	/^static void interpret_csi_nel(Vt *t)$/;"	f	file:	signature:(Vt *t)
+interpret_csi_priv_mode	vt.c	/^static void interpret_csi_priv_mode(Vt *t, int param[], int pcount, bool set)$/;"	f	file:	signature:(Vt *t, int param[], int pcount, bool set)
+interpret_csi_ri	vt.c	/^static void interpret_csi_ri(Vt *t)$/;"	f	file:	signature:(Vt *t)
+interpret_csi_scs	vt.c	/^static void interpret_csi_scs(Vt *t)$/;"	f	file:	signature:(Vt *t)
+interpret_csi_sgr	vt.c	/^static void interpret_csi_sgr(Vt *t, int param[], int pcount)$/;"	f	file:	signature:(Vt *t, int param[], int pcount)
+interpret_osc	vt.c	/^static void interpret_osc(Vt *t)$/;"	f	file:	signature:(Vt *t)
+is_content_visible	dvtm.c	/^is_content_visible(Client *c) {$/;"	f	file:	signature:(Client *c)
+is_utf8	vt.c	/^static bool is_utf8, has_default_colors;$/;"	v	file:
+is_utf8_locale	vt.c	/^static void is_utf8_locale(void)$/;"	f	file:	signature:(void)
+is_valid_csi_ender	vt.c	/^static bool is_valid_csi_ender(int c)$/;"	f	file:	signature:(int c)
+isarrange	dvtm.c	/^isarrange(void (*func)()) {$/;"	f	file:	signature:(void (*func)())
+isvisible	dvtm.c	/^isvisible(Client *c) {$/;"	f	file:	signature:(Client *c)
+keybinding	dvtm.c	/^keybinding(KeyCombo keys, unsigned int keycount) {$/;"	f	file:	signature:(KeyCombo keys, unsigned int keycount)
+keypress	dvtm.c	/^keypress(int code) {$/;"	f	file:	signature:(int code)
+keys	dvtm.c	/^	KeyCombo keys;$/;"	m	struct:__anon10	file:	access:public
+keytable	config.def.h	/^static char const * const keytable[] = {$/;"	v
+keytable	config.h	/^static char const * const keytable[] = {$/;"	v
+keytable	vt.c	/^static const char *keytable[KEY_MAX+1] = {$/;"	v	file:
+killclient	dvtm.c	/^killclient(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+killclient	dvtm.c	/^static void killclient(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+lastpos	dvtm.c	/^	int pos, lastpos;$/;"	m	struct:__anon14	file:	access:public
+lastsel	dvtm.c	/^static Client *lastsel = NULL;$/;"	v	file:
+layout	dvtm.c	/^static Layout *layout = layouts;$/;"	v	file:
+layouts	config.def.h	/^static Layout layouts[] = {$/;"	v
+layouts	config.h	/^static Layout layouts[] = {$/;"	v
+len	dvtm.c	/^	size_t len;$/;"	m	struct:__anon16	file:	access:public
+lines	vt.c	/^	Row *lines;            \/* array of Row pointers of size 'rows' *\/$/;"	m	struct:__anon3	file:	access:public
+main	dvtm-editor.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	dvtm.c	/^main(int argc, char *argv[]) {$/;"	f	signature:(int argc, char *argv[])
+mask	dvtm.c	/^	mmask_t mask;$/;"	m	struct:__anon11	file:	access:public
+maxcols	vt.c	/^	int maxcols;           \/* allocated cells (maximal cols over time) *\/$/;"	m	struct:__anon3	file:	access:public
+mfact	dvtm.c	/^	float mfact;$/;"	m	struct:__anon5	file:	access:public
+minimized	dvtm.c	/^	bool minimized;$/;"	m	struct:Client	file:	access:public
+mmask_t	vt.h	26;"	d
+mouse_events_enabled	dvtm.c	/^static bool mouse_events_enabled = ENABLE_MOUSE;$/;"	v	file:
+mouse_focus	dvtm.c	/^mouse_focus(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+mouse_focus	dvtm.c	/^static void mouse_focus(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+mouse_fullscreen	dvtm.c	/^mouse_fullscreen(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+mouse_fullscreen	dvtm.c	/^static void mouse_fullscreen(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+mouse_minimize	dvtm.c	/^mouse_minimize(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+mouse_minimize	dvtm.c	/^static void mouse_minimize(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+mouse_setup	dvtm.c	/^mouse_setup(void) {$/;"	f	file:	signature:(void)
+mouse_zoom	dvtm.c	/^mouse_zoom(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+mouse_zoom	dvtm.c	/^static void mouse_zoom(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+mousetrack	vt.c	/^	unsigned mousetrack:1;$/;"	m	struct:Vt	file:	access:public
+move_client	dvtm.c	/^move_client(Client *c, int x, int y) {$/;"	f	file:	signature:(Client *c, int x, int y)
+msel	dvtm.c	/^static Client *msel = NULL;$/;"	v	file:
+name	dvtm.c	/^	char *name;$/;"	m	struct:__anon17	file:	access:public
+name	dvtm.c	/^	const char *name;$/;"	m	struct:__anon12	file:	access:public
+need_resize	dvtm.c	/^	volatile sig_atomic_t need_resize;$/;"	m	struct:__anon5	file:	access:public
+new_escape_sequence	vt.c	/^static void new_escape_sequence(Vt *t)$/;"	f	file:	signature:(Vt *t)
+next	dvtm.c	/^	Client *next;$/;"	m	struct:Client	file:	access:public
+nextvisible	dvtm.c	/^nextvisible(Client *c) {$/;"	f	file:	signature:(Client *c)
+nextvisible	dvtm.c	/^static Client* nextvisible(Client *c);$/;"	p	file:	signature:(Client *c)
+nmaster	dvtm.c	/^	unsigned int nmaster;$/;"	m	struct:__anon5	file:	access:public
+open_or_create_fifo	dvtm.c	/^open_or_create_fifo(const char *name, const char **name_created) {$/;"	f	file:	signature:(const char *name, const char **name_created)
+order	dvtm.c	/^	int order;$/;"	m	struct:Client	file:	access:public
+pair	dvtm.c	/^	short pair;$/;"	m	struct:__anon7	file:	access:public
+parse_args	dvtm.c	/^parse_args(int argc, char *argv[]) {$/;"	f	file:	signature:(int argc, char *argv[])
+paste	dvtm.c	/^paste(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+paste	dvtm.c	/^static void paste(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+pid	dvtm.c	/^	pid_t pid;$/;"	m	struct:Client	file:	access:public
+pid	vt.c	/^	pid_t pid;               \/* process id of the process running in this vt *\/$/;"	m	struct:Vt	file:	access:public
+pos	dvtm.c	/^	int pos, lastpos;$/;"	m	struct:__anon14	file:	access:public
+prev	dvtm.c	/^	Client *prev;$/;"	m	struct:Client	file:	access:public
+process_nonprinting	vt.c	/^static void process_nonprinting(Vt *t, wchar_t wc)$/;"	f	file:	signature:(Vt *t, wchar_t wc)
+process_nonprinting	vt.c	/^static void process_nonprinting(Vt *t, wchar_t wc);$/;"	p	file:	signature:(Vt *t, wchar_t wc)
+pty	vt.c	/^	int pty;                 \/* master side pty file descriptor *\/$/;"	m	struct:Vt	file:	access:public
+put_wc	vt.c	/^static void put_wc(Vt *t, wchar_t wc)$/;"	f	file:	signature:(Vt *t, wchar_t wc)
+puttab	vt.c	/^static void puttab(Vt *t, int count)$/;"	f	file:	signature:(Vt *t, int count)
+puttab	vt.c	/^static void puttab(Vt *t, int count);$/;"	p	file:	signature:(Vt *t, int count)
+quit	dvtm.c	/^quit(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+quit	dvtm.c	/^static void quit(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+rbuf	vt.c	/^	char rbuf[BUFSIZ];$/;"	m	struct:Vt	file:	access:public
+redraw	dvtm.c	/^redraw(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+redraw	dvtm.c	/^static void redraw(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+relposmode	vt.c	/^	unsigned relposmode:1;$/;"	m	struct:Vt	file:	access:public
+resize	dvtm.c	/^resize(Client *c, int x, int y, int w, int h) {$/;"	f	file:	signature:(Client *c, int x, int y, int w, int h)
+resize	dvtm.c	/^static void resize(Client *c, int x, int y, int w, int h);$/;"	p	file:	signature:(Client *c, int x, int y, int w, int h)
+resize_client	dvtm.c	/^resize_client(Client *c, int w, int h) {$/;"	f	file:	signature:(Client *c, int w, int h)
+resize_screen	dvtm.c	/^resize_screen(void) {$/;"	f	file:	signature:(void)
+rlen	vt.c	/^	unsigned int rlen, elen;$/;"	m	struct:Vt	file:	access:public
+row_roll	vt.c	/^static void row_roll(Row *start, Row *end, int count)$/;"	f	file:	signature:(Row *start, Row *end, int count)
+row_set	vt.c	/^static void row_set(Row *row, int start, int len, Buffer *t)$/;"	f	file:	signature:(Row *row, int start, int len, Buffer *t)
+rows	vt.c	/^	int rows, cols;        \/* current dimension of buffer *\/$/;"	m	struct:__anon3	file:	access:public
+runinall	dvtm.c	/^static bool runinall = false;$/;"	v	file:
+running	dvtm.c	/^static volatile sig_atomic_t running = true;$/;"	v	file:
+savattrs	vt.c	/^	attr_t curattrs, savattrs; \/* current and saved attributes for cells *\/$/;"	m	struct:__anon3	file:	access:public
+savbg	vt.c	/^	short savfg, savbg;    \/* saved colors *\/$/;"	m	struct:__anon3	file:	access:public
+savfg	vt.c	/^	short savfg, savbg;    \/* saved colors *\/$/;"	m	struct:__anon3	file:	access:public
+savgraphmode	vt.c	/^	unsigned savgraphmode:1;$/;"	m	struct:Vt	file:	access:public
+scol	vt.c	/^	int srow, scol;          \/* last known offset to display start row, start column *\/$/;"	m	struct:Vt	file:	access:public
+screen	dvtm.c	/^Screen screen = { .mfact = MFACT, .nmaster = NMASTER, .history = SCROLL_HISTORY };$/;"	v
+scroll_above	vt.c	/^	int scroll_above;      \/* number of lines above current viewport *\/$/;"	m	struct:__anon3	file:	access:public
+scroll_below	vt.c	/^	int scroll_below;      \/* number of lines below current viewport *\/$/;"	m	struct:__anon3	file:	access:public
+scroll_bot	vt.c	/^	Row *scroll_bot;       \/* row in lines where scrolling region ends *\/$/;"	m	struct:__anon3	file:	access:public
+scroll_buf	vt.c	/^	Row *scroll_buf;       \/* a ring buffer holding the scroll back content *\/$/;"	m	struct:__anon3	file:	access:public
+scroll_index	vt.c	/^	int scroll_index;      \/* current index into the ring buffer *\/$/;"	m	struct:__anon3	file:	access:public
+scroll_size	vt.c	/^	int scroll_size;       \/* maximal capacity of scroll back buffer (in lines) *\/$/;"	m	struct:__anon3	file:	access:public
+scroll_top	vt.c	/^	Row *scroll_top;       \/* row in lines where scrolling region starts *\/$/;"	m	struct:__anon3	file:	access:public
+scrollback	dvtm.c	/^scrollback(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+scrollback	dvtm.c	/^static void scrollback(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+seen_input	vt.c	/^	unsigned seen_input:1;$/;"	m	struct:Vt	file:	access:public
+sel	dvtm.c	/^static Client *sel = NULL;$/;"	v	file:
+seltags	dvtm.c	/^static unsigned int seltags;$/;"	v	file:
+send	dvtm.c	/^send(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+send	dvtm.c	/^static void send(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+send_curs	vt.c	/^static void send_curs(Vt *t)$/;"	f	file:	signature:(Vt *t)
+send_curs	vt.c	/^static void send_curs(Vt *t);$/;"	p	file:	signature:(Vt *t)
+set_escdelay	dvtm.c	46;"	d	file:
+setlayout	dvtm.c	/^setlayout(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+setlayout	dvtm.c	/^static void setlayout(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+setmfact	dvtm.c	/^setmfact(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+setmfact	dvtm.c	/^static void setmfact(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+settitle	dvtm.c	/^settitle(Client *c) {$/;"	f	file:	signature:(Client *c)
+setup	dvtm.c	/^setup(void) {$/;"	f	file:	signature:(void)
+sh_cmd	testsuite.sh	/^sh_cmd() {$/;"	f
+shell	dvtm.c	/^static const char *shell;$/;"	v	file:
+show_border	dvtm.c	/^show_border(void) {$/;"	f	file:	signature:(void)
+showbar	dvtm.c	/^showbar(void) {$/;"	f	file:	signature:(void)
+sigchld_handler	dvtm.c	/^sigchld_handler(int sig) {$/;"	f	file:	signature:(int sig)
+sigterm_handler	dvtm.c	/^sigterm_handler(int sig) {$/;"	f	file:	signature:(int sig)
+sigwinch_handler	dvtm.c	/^sigwinch_handler(int sig) {$/;"	f	file:	signature:(int sig)
+size	dvtm.c	/^	size_t size;$/;"	m	struct:__anon16	file:	access:public
+snext	dvtm.c	/^	Client *snext;$/;"	m	struct:Client	file:	access:public
+spiral	fibonacci.c	/^static void spiral(void)$/;"	f	file:	signature:(void)
+srow	vt.c	/^	int srow, scol;          \/* last known offset to display start row, start column *\/$/;"	m	struct:Vt	file:	access:public
+stack	dvtm.c	/^static Client *stack = NULL;$/;"	v	file:
+startup	dvtm.c	/^startup(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+startup	dvtm.c	/^static void startup(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+symbol	dvtm.c	/^	const char *symbol;$/;"	m	struct:__anon6	file:	access:public
+tabs	vt.c	/^	bool *tabs;            \/* a boolean flag for each column whether it is a tab *\/$/;"	m	struct:__anon3	file:	access:public
+tag	dvtm.c	/^static void tag(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+tag	dvtm.c	/^tag(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+tagid	dvtm.c	/^static void tagid(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+tagid	dvtm.c	/^tagid(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+tags	config.def.h	/^const char tags[][8] = { "1", "2", "3", "4", "5" };$/;"	v
+tags	config.h	/^const char tags[][8] = { "1", "2", "3", "4", "5" };$/;"	v
+tags	dvtm.c	/^	unsigned int tags;$/;"	m	struct:Client	file:	access:public
+tagschanged	dvtm.c	/^tagschanged() {$/;"	f	file:
+tagset	dvtm.c	/^static unsigned int tagset[2] = { 1, 1 };$/;"	v	file:
+term	dvtm.c	/^	Vt *term;$/;"	m	struct:Client	file:	access:public
+term_title_handler	dvtm.c	/^term_title_handler(Vt *term, const char *title) {$/;"	f	file:	signature:(Vt *term, const char *title)
+term_urgent_handler	dvtm.c	/^term_urgent_handler(Vt *term) {$/;"	f	file:	signature:(Vt *term)
+test_copymode	testsuite.sh	/^test_copymode() { # requires wget, diff, vis$/;"	f
+text	dvtm.c	/^	char text[512];$/;"	m	struct:__anon14	file:	access:public
+text	vt.c	/^	wchar_t text;$/;"	m	struct:__anon1	file:	access:public
+tile	tile.c	/^static void tile(void)$/;"	f	file:	signature:(void)
+title	dvtm.c	/^	char title[255];$/;"	m	struct:Client	file:	access:public
+title	dvtm.c	/^	const char *title;$/;"	m	struct:__anon8	file:	access:public
+title	dvtm.c	/^static char *title;$/;"	v	file:
+title	vt.c	/^	char title[256];         \/* xterm style window title *\/$/;"	m	struct:Vt	file:	access:public
+title_handler	vt.c	/^	vt_title_handler_t title_handler; \/* hook which is called when title changes *\/$/;"	m	struct:Vt	file:	access:public
+togglebar	dvtm.c	/^static void togglebar(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+togglebar	dvtm.c	/^togglebar(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+togglebarpos	dvtm.c	/^static void togglebarpos(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+togglebarpos	dvtm.c	/^togglebarpos(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+toggleminimize	dvtm.c	/^static void toggleminimize(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+toggleminimize	dvtm.c	/^toggleminimize(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+togglemouse	dvtm.c	/^static void togglemouse(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+togglemouse	dvtm.c	/^togglemouse(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+togglerunall	dvtm.c	/^static void togglerunall(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+togglerunall	dvtm.c	/^togglerunall(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+toggletag	dvtm.c	/^static void toggletag(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+toggletag	dvtm.c	/^toggletag(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+toggleview	dvtm.c	/^static void toggleview(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+toggleview	dvtm.c	/^toggleview(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+try_interpret_escape_seq	vt.c	/^static void try_interpret_escape_seq(Vt *t)$/;"	f	file:	signature:(Vt *t)
+tstack	tstack.c	/^static void tstack(void)$/;"	f	file:	signature:(void)
+updatebarpos	dvtm.c	/^updatebarpos(void) {$/;"	f	file:	signature:(void)
+urgent	dvtm.c	/^	bool urgent;$/;"	m	struct:Client	file:	access:public
+urgent_handler	vt.c	/^	vt_urgent_handler_t urgent_handler; \/* hook which is called upon bell *\/$/;"	m	struct:Vt	file:	access:public
+usage	dvtm.c	/^usage(void) {$/;"	f	file:	signature:(void)
+view	dvtm.c	/^static void view(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+view	dvtm.c	/^view(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+viewprevtag	dvtm.c	/^static void viewprevtag(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+viewprevtag	dvtm.c	/^viewprevtag(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
+vstack	vstack.c	/^static void vstack(void)$/;"	f	file:	signature:(void)
+vt_color_get	vt.c	/^short vt_color_get(Vt *t, short fg, short bg)$/;"	f	signature:(Vt *t, short fg, short bg)
+vt_color_get	vt.h	/^short vt_color_get(Vt*, short fg, short bg);$/;"	p	signature:(Vt*, short fg, short bg)
+vt_color_reserve	vt.c	/^short vt_color_reserve(short fg, short bg)$/;"	f	signature:(short fg, short bg)
+vt_color_reserve	vt.h	/^short vt_color_reserve(short fg, short bg);$/;"	p	signature:(short fg, short bg)
+vt_content_get	vt.c	/^size_t vt_content_get(Vt *t, char **buf, bool colored)$/;"	f	signature:(Vt *t, char **buf, bool colored)
+vt_content_get	vt.h	/^size_t vt_content_get(Vt*, char **s, bool colored);$/;"	p	signature:(Vt*, char **s, bool colored)
+vt_content_start	vt.c	/^int vt_content_start(Vt *t)$/;"	f	signature:(Vt *t)
+vt_content_start	vt.h	/^int vt_content_start(Vt*);$/;"	p	signature:(Vt*)
+vt_create	vt.c	/^Vt *vt_create(int rows, int cols, int scroll_size)$/;"	f	signature:(int rows, int cols, int scroll_size)
+vt_create	vt.h	/^Vt *vt_create(int rows, int cols, int scroll_buf_sz);$/;"	p	signature:(int rows, int cols, int scroll_buf_sz)
+vt_cursor_visible	vt.c	/^bool vt_cursor_visible(Vt *t)$/;"	f	signature:(Vt *t)
+vt_cursor_visible	vt.h	/^bool vt_cursor_visible(Vt*);$/;"	p	signature:(Vt*)
+vt_data_get	vt.c	/^void *vt_data_get(Vt *t)$/;"	f	signature:(Vt *t)
+vt_data_get	vt.h	/^void *vt_data_get(Vt*);$/;"	p	signature:(Vt*)
+vt_data_set	vt.c	/^void vt_data_set(Vt *t, void *data)$/;"	f	signature:(Vt *t, void *data)
+vt_data_set	vt.h	/^void vt_data_set(Vt*, void *);$/;"	p	signature:(Vt*, void *)
+vt_default_colors_set	vt.c	/^void vt_default_colors_set(Vt *t, attr_t attrs, short fg, short bg)$/;"	f	signature:(Vt *t, attr_t attrs, short fg, short bg)
+vt_default_colors_set	vt.h	/^void vt_default_colors_set(Vt*, attr_t attrs, short fg, short bg);$/;"	p	signature:(Vt*, attr_t attrs, short fg, short bg)
+vt_destroy	vt.c	/^void vt_destroy(Vt *t)$/;"	f	signature:(Vt *t)
+vt_destroy	vt.h	/^void vt_destroy(Vt*);$/;"	p	signature:(Vt*)
+vt_dirty	vt.c	/^void vt_dirty(Vt *t)$/;"	f	signature:(Vt *t)
+vt_dirty	vt.h	/^void vt_dirty(Vt*);$/;"	p	signature:(Vt*)
+vt_draw	vt.c	/^void vt_draw(Vt *t, WINDOW *win, int srow, int scol)$/;"	f	signature:(Vt *t, WINDOW *win, int srow, int scol)
+vt_draw	vt.h	/^void vt_draw(Vt*, WINDOW *win, int startrow, int startcol);$/;"	p	signature:(Vt*, WINDOW *win, int startrow, int startcol)
+vt_forkpty	vt.c	/^pid_t vt_forkpty(Vt *t, const char *p, const char *argv[], const char *cwd, const char *env[], int *to, int *from)$/;"	f	signature:(Vt *t, const char *p, const char *argv[], const char *cwd, const char *env[], int *to, int *from)
+vt_forkpty	vt.h	/^pid_t vt_forkpty(Vt*, const char *p, const char *argv[], const char *cwd, const char *env[], int *to, int *from);$/;"	p	signature:(Vt*, const char *p, const char *argv[], const char *cwd, const char *env[], int *to, int *from)
+vt_init	vt.c	/^void vt_init(void)$/;"	f	signature:(void)
+vt_init	vt.h	/^void vt_init(void);$/;"	p	signature:(void)
+vt_keypress	vt.c	/^void vt_keypress(Vt *t, int keycode)$/;"	f	signature:(Vt *t, int keycode)
+vt_keypress	vt.h	/^void vt_keypress(Vt *, int keycode);$/;"	p	signature:(Vt *, int keycode)
+vt_keytable_set	vt.c	/^void vt_keytable_set(const char * const keytable_overlay[], int count)$/;"	f	signature:(const char * const keytable_overlay[], int count)
+vt_keytable_set	vt.h	/^void vt_keytable_set(char const * const keytable_overlay[], int count);$/;"	p	signature:(char const * const keytable_overlay[], int count)
+vt_mouse	vt.c	/^void vt_mouse(Vt *t, int x, int y, mmask_t mask)$/;"	f	signature:(Vt *t, int x, int y, mmask_t mask)
+vt_mouse	vt.h	/^void vt_mouse(Vt*, int x, int y, mmask_t mask);$/;"	p	signature:(Vt*, int x, int y, mmask_t mask)
+vt_noscroll	vt.c	/^void vt_noscroll(Vt *t)$/;"	f	signature:(Vt *t)
+vt_noscroll	vt.h	/^void vt_noscroll(Vt*);$/;"	p	signature:(Vt*)
+vt_pid_get	vt.c	/^pid_t vt_pid_get(Vt *t)$/;"	f	signature:(Vt *t)
+vt_pid_get	vt.h	/^pid_t vt_pid_get(Vt*);$/;"	p	signature:(Vt*)
+vt_process	vt.c	/^int vt_process(Vt *t)$/;"	f	signature:(Vt *t)
+vt_process	vt.h	/^int vt_process(Vt *);$/;"	p	signature:(Vt *)
+vt_pty_get	vt.c	/^int vt_pty_get(Vt *t)$/;"	f	signature:(Vt *t)
+vt_pty_get	vt.h	/^int vt_pty_get(Vt*);$/;"	p	signature:(Vt*)
+vt_resize	vt.c	/^void vt_resize(Vt *t, int rows, int cols)$/;"	f	signature:(Vt *t, int rows, int cols)
+vt_resize	vt.h	/^void vt_resize(Vt*, int rows, int cols);$/;"	p	signature:(Vt*, int rows, int cols)
+vt_scroll	vt.c	/^void vt_scroll(Vt *t, int rows)$/;"	f	signature:(Vt *t, int rows)
+vt_scroll	vt.h	/^void vt_scroll(Vt*, int rows);$/;"	p	signature:(Vt*, int rows)
+vt_shutdown	vt.c	/^void vt_shutdown(void)$/;"	f	signature:(void)
+vt_shutdown	vt.h	/^void vt_shutdown(void);$/;"	p	signature:(void)
+vt_term	vt.c	/^static char vt_term[32];$/;"	v	file:
+vt_title_handler_set	vt.c	/^void vt_title_handler_set(Vt *t, vt_title_handler_t handler)$/;"	f	signature:(Vt *t, vt_title_handler_t handler)
+vt_title_handler_set	vt.h	/^void vt_title_handler_set(Vt*, vt_title_handler_t);$/;"	p	signature:(Vt*, vt_title_handler_t)
+vt_title_handler_t	vt.h	/^typedef void (*vt_title_handler_t)(Vt*, const char *title);$/;"	t
+vt_urgent_handler_set	vt.c	/^void vt_urgent_handler_set(Vt *t, vt_urgent_handler_t handler)$/;"	f	signature:(Vt *t, vt_urgent_handler_t handler)
+vt_urgent_handler_set	vt.h	/^void vt_urgent_handler_set(Vt*, vt_urgent_handler_t);$/;"	p	signature:(Vt*, vt_urgent_handler_t)
+vt_urgent_handler_t	vt.h	/^typedef void (*vt_urgent_handler_t)(Vt*);$/;"	t
+vt_write	vt.c	/^ssize_t vt_write(Vt *t, const char *buf, size_t len)$/;"	f	signature:(Vt *t, const char *buf, size_t len)
+vt_write	vt.h	/^ssize_t vt_write(Vt*, const char *buf, size_t len);$/;"	p	signature:(Vt*, const char *buf, size_t len)
+w	dvtm.c	/^	int w;$/;"	m	struct:__anon5	file:	access:public
+w	dvtm.c	/^	unsigned short int w;$/;"	m	struct:Client	file:	access:public
+wah	dvtm.c	/^static unsigned int waw, wah, wax, way;$/;"	v	file:
+waw	dvtm.c	/^static unsigned int waw, wah, wax, way;$/;"	v	file:
+wax	dvtm.c	/^static unsigned int waw, wah, wax, way;$/;"	v	file:
+way	dvtm.c	/^static unsigned int waw, wah, wax, way;$/;"	v	file:
+window	dvtm.c	/^	WINDOW *window;$/;"	m	struct:Client	file:	access:public
+x	dvtm.c	/^	unsigned short int x;$/;"	m	struct:Client	file:	access:public
+y	dvtm.c	/^	unsigned short int y;$/;"	m	struct:Client	file:	access:public
+y	dvtm.c	/^	unsigned short int y;$/;"	m	struct:__anon14	file:	access:public
+zoom	dvtm.c	/^static void zoom(const char *args[]);$/;"	p	file:	signature:(const char *args[])
+zoom	dvtm.c	/^zoom(const char *args[]) {$/;"	f	file:	signature:(const char *args[])
