@@ -6,6 +6,7 @@ export GOPATH=~/go
 export RTV_BROWSER=w3m
 export BROWSER=w3m
 export TZ=Canada/Atlantic
+export TERM=xterm
 #set -o vi
 alias s_duck='sr -browser=w3m duckduckgo'
 alias s_w='sr -browser=w3m wikipedia'
@@ -40,3 +41,4 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 ~/configgen/bin/randquote.sh
+

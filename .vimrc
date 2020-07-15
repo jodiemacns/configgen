@@ -32,7 +32,7 @@ hi Visual ctermbg=grey  ctermfg=black
 
 """source ./flattened_dark.vim
 """source ./flattened_light.vim
-source ~/configgen/.vim/meta5.vim
+"""source ~/configgen/.vim/meta5.vim
 
 """ ---------------------------------------------------------------------------
 """ Vundle package manger option
