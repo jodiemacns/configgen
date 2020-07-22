@@ -39,7 +39,7 @@ Softtools, Diab data compiler, Watcom C /C ++, IAR, GNU C compiler
 
 **Languages Used**
 
-C, C++, Python, Java, Pearl
+C, C++, Python, Java, Pearl, PHP 
 
 **Hardware Tools Used**
 
@@ -61,24 +61,22 @@ B3P 1M1
 
 **Senior Firmware Developer**
 
-- Developed Firmware for a Low powered health monitoring Bluetooth Device
-- Wrote software technical documentation
-- Developed both client and server using an embedded STM32 BlueNRG1
-- Developed Android app for testing Bluetooth
-- Developed special firmware for FCC Testing and verification
-- Developed inventory Database and front end using PHP
-
-- Developed IOT Application on Raspberry pi
-    - Wireless configuration
-    - USB Connected to device that monitored and controlled Grow equipment
-    - Devices were controlled using "Thingsboard"
-    - Developed Special Widgets using NodeJS on Thingsboard
-
 - Developed Firmware for a low powered IOT device
    - Connected to **LTE-CATM1 / NB1** mobile network using u-blox **SARA-R410** module
    - Used a self hosted **Docker** image running on our own server.
    - Used **MQTT** and **HTTP** API calls to the Thingsboard server for reporting and control.
    - Installed and managed certificates using [letsencrypt.org](letsencrypt.org)
+- Developed IOT Application on Raspberry pi
+    - Wireless configuration
+    - USB Connected to device that monitored and controlled Grow equipment
+    - Devices were controlled using "Thingsboard"
+    - Developed Special Widgets using NodeJS on Thingsboard
+- Developed Firmware for a Low powered health monitoring Bluetooth Device
+- Wrote software technical documentation
+- Developed both client and server using an embedded STM32 BlueNRG1
+    - Developed Android app for testing Bluetooth
+- Developed special firmware for FCC Testing and verification
+- Developed inventory Database and front end using PHP
 
 NewAE Technology Inc                           2017 - 2018
 ----------------------------------------------------------
@@ -216,5 +214,4 @@ EDUCATION
 
 **New Glasgow**  
 - New Glasgow High School
-
 
