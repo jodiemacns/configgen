@@ -1,16 +1,17 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 execute pathogen#infect()
 
-"""colorschem evening
+"""colorscheme morning
+"""colorscheme evening
 """set guioptions -=T
 """set guioptions -=m
 """set guioptions -=L
+colorscheme slate 
 
 """ ---------------------------------------------------------------------------
 """ Standard options
 syntax on
 filetype plugin indent on
-"""colorscheme  evening
 set expandtab tabstop=4
 set shiftwidth=4
 set number
@@ -33,6 +34,7 @@ hi Visual ctermbg=grey  ctermfg=black
 """source ./flattened_dark.vim
 """source ./flattened_light.vim
 """source ~/configgen/.vim/meta5.vim
+"""colorscheme evening 
 
 """ ---------------------------------------------------------------------------
 """ Vundle package manger option
@@ -105,6 +107,9 @@ command! Rw :%s/\s\+$//e
 command! Rtab :%s/\t/    /e
 command! Rms :%s///e
 command! Cbuf :%bd|e#
+command! TagRuby :silent ! ctags -R --languages=ruby --exclude=git --exclude=./src/board_r0_02b.h --exclude=log -f .tags
+
+set tags+=.tags
 
 """mand! Dbg normal mZ:ConqueGdb bt.out<CR><ESC><cr>i<c-c>ll<cr>c<cr><esc><c-w>k`Z
 command! Dbg normal mZ:ConqueGdb bt.out<CR>i<c-c>ll<cr>c<cr><esc><c-w>k`Z
@@ -121,7 +126,7 @@ map <F2> :!tig <CR>
 map <F3> :!git diff --name-only<CR>
 map <F4> :!git difftool --tool=vimdiff --no-prompt %<CR>
 map <F5> mz :Rw <CR> :Rtab <CR> :Rms <CR>:set nohlsearch<CR>`z
-map <F6> :!ctags --exclude=.git --exclude=docs --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F6> :!ctags --exclude=.git --exclude=docs --exclude=*board_r0* --exclude=scanner/sdk -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 """ Insert the comments.
 map <F7> <ESC>$80a <ESC>080ld$
 map <F8> <ESC>$80a <ESC>060ld$i///< 
@@ -133,6 +138,3 @@ map <F12> :source ~/configgen/.vim/meta5.vim<CR>
 """map <F5> : let g:ConqueGdb_Disable = 0 <CR>
 
 """ map <F10> :make -f makefile.generic release=001 <CR>
-
-
-
