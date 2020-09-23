@@ -15,6 +15,8 @@ then
     echo "*** v = verify Document    g_sig.sh v           "
     echo "*** i = import key         g_sig.sh i           "
     echo "*** E = export key         g_sig.sh E           "
+    echo "*** L = list you keys      g_sig.sh E           "
+    echo "*** l = list keys          g_sig.sh E           "
     echo "*** C = Create signing key g_sig.sh C           "
     echo "*** z = zip Document       g_sig.sh z           "
     echo "*** u = unzip Document     g_sig.sh u           "
@@ -47,6 +49,22 @@ fi
 if [ "$1" == "E" ]
 then
     gpg --armor --export $USER
+    exit
+fi
+
+#--------------------------------------------------------------------------------
+# Export the public key 
+if [ "$1" == "L" ]
+then
+    gpg --list-secret-keys
+    exit
+fi
+
+#--------------------------------------------------------------------------------
+# Export the public key 
+if [ "$1" == "E" ]
+then
+    gpg --list-public-keys
     exit
 fi
 
