@@ -10,18 +10,18 @@ USER=$2
 # Help menu 
 if [ "$ACTION" == "?" ]
 then
-    echo "*** ? = help.              g_sig.sh ?           "
-    echo "*** S = Sign Document      g_sig.sh S doc.pdf   "
-    echo "*** v = verify Document    g_sig.sh v           "
-    echo "*** i = import key         g_sig.sh i           "
-    echo "*** E = export key         g_sig.sh E           "
-    echo "*** L = list you keys      g_sig.sh E           "
-    echo "*** l = list keys          g_sig.sh E           "
-    echo "*** C = Create signing key g_sig.sh C           "
-    echo "*** z = zip Document       g_sig.sh z           "
-    echo "*** u = unzip Document     g_sig.sh u           "
-    echo "*** e = encrypt file       g_sig.sh e           "
-    echo "*** d = decrypt file       g_sig.sh e           "
+    echo "*** ? = help.              g_sig.sh ?             "
+    echo "*** S = Sign Document      g_sig.sh S doc.pdf     "
+    echo "*** v = verify Document    g_sig.sh v doc.pdf     "
+    echo "*** i = import key         g_sig.sh i             "
+    echo "*** E = export key         g_sig.sh E             "
+    echo "*** L = list you keys      g_sig.sh L             "
+    echo "*** l = list keys          g_sig.sh l             "
+    echo "*** C = Create signing key g_sig.sh C             "
+    echo "*** z = zip Document       g_sig.sh z to to       "
+    echo "*** u = unzip Document     g_sig.sh u             "
+    echo "*** e = encrypt file       g_sig.sh e file to to  "
+    echo "*** d = decrypt file       g_sig.sh e file.tar.gz "
     exit
 fi
 
