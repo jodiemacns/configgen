@@ -19,6 +19,7 @@ alias w_sg='sr -browser=firefox google'
 alias tmuxk='tmux kill-session'
 alias bm='w3m ~/configgen/bookmark.html'
 alias sshterm='xterm -fn 9x15 -e ssh jodie@192.168.0.2 &'
+alias r='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black

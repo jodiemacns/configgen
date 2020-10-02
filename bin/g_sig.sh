@@ -41,8 +41,8 @@ fi
 # Verify file
 if [ "$1" == "v" ]
 then
-    echo 'gpg --status-fd 1 --verify $FILE.sig  $FILE 2>/dev/null | grep GOODSIG'
-    gpg --status-fd 1 --verify $FILE.sig  $FILE 2>/dev/null | grep GOODSIG
+    echo 'gpg --status-fd 1 --verify $FILE.sig  $FILE 2>&1 | grep GOODSIG'
+    gpg --status-fd 1 --verify $FILE.sig  $FILE 2>&1 | grep GOODSIG
     exit
 fi
 
