@@ -41,5 +41,6 @@ if [ "$TERM" = "linux" ]; then
     clear #for background artifacting
 fi
 
+source ~/configgen/quitcd.bash_zsh
 ~/configgen/bin/randquote.sh
 
