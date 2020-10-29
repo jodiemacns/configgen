@@ -73,10 +73,18 @@ B3P 1M1
     - Developed Special Widgets using NodeJS on Thingsboard
 - Developed Firmware for a Low powered health monitoring Bluetooth Device
 - Wrote software technical documentation
-- Developed both client and server using an embedded STM32 BlueNRG1
+- Developed both Bluetooth client and server using an embedded STM32 BlueNRG1
     - Developed Android app for testing Bluetooth
 - Developed special firmware for FCC Testing and verification
 - Developed inventory Database and front end using PHP
+- Worked on Embedded Lorawan implementations.
+    - RAK 4270 Interfacing with AT commands
+    - SAM R34 using Lorawan Mac None
+    - STM32 Nucleo evaluation board
+- Setup Lorawan Network using
+    - The Things network
+    - Senet https://www.senetco.com/
+    - Local Chirpstack server
 
 NewAE Technology Inc                           2017 - 2018
 ----------------------------------------------------------
