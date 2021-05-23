@@ -25,7 +25,7 @@ n ()
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
-export NNN_BMS='L:~/code/enginuity/chirpstackserver/;C:~/configgen/;d:~/code/enginuity/diary/;r:~/code/enginuity/lorawan_retrofit/;c:~/code/enginuity/c_template/;l:~/code/enginuity/iot_valve_fw;'
+export NNN_BMS='m:~/code/enginuity/meetings;L:~/code/enginuity/chirpstackserver/;C:~/configgen/;d:~/code/enginuity/diary/;r:~/code/enginuity/lorawan_retrofit/;c:~/code/enginuity/c_template/;l:~/code/enginuity/iot_valve_fw;M:~/code/enginuity/mobile_monitor_system;'
 #export NNN_USE_EDITOR=0                                 # use the $EDITOR when opening text files
 export NNN_SSHFS_OPTS="sshfs -o follow_symlinks"        # make sshfs follow symlinks on the remote
 export NNN_COLORS="2136"                        # use a different color for each context

@@ -1,5 +1,6 @@
 weechat.log
 logs
+/bin/out
 bashpodder
 .vim/bundle
 .vim/.vim

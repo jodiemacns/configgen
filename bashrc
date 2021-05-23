@@ -53,5 +53,6 @@ fi
 
 #source ~/configgen/quitcd.bash_zsh
 source ~/configgen/config_nnn.bash
+set -o vi
 ~/configgen/bin/randquote.sh
 

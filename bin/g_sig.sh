@@ -12,6 +12,7 @@ if [ "$ACTION" == "?" ]
 then
     echo "*** ? = help.              g_sig.sh ?             "
     echo "*** S = Sign Document      g_sig.sh S doc.pdf     "
+    echo "*** s = Sign Inline        g_sig.sh s doc.md      "
     echo "*** v = verify Document    g_sig.sh v doc.pdf     "
     echo "*** i = import key         g_sig.sh i             "
     echo "*** E = export key         g_sig.sh E             "
